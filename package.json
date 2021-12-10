@@ -1,5 +1,18 @@
 {
   "name": "voice-room-pnu",
+  "versions": "1.0.0",
+  "description": "Project Voice Room PNU for diplom",
+  "author": {
+    "name": "Pavlo Seniv",
+    "email": "senivpavlo16it@gmail.com",
+    "url": "https://pavloseniv.github.io/pavlo-seniv-portfolio/pavlo-seniv-portfolio/index.html"
+  },
+  "license": "ISC",
+  "keywords": [
+    "MERN",
+    "Node.js"
+  ],
+  "homepage": "https://github.com/PavloSeniv",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -15,5 +28,18 @@
   "devDependencies": {
     "eslint": "7.32.0",
     "eslint-config-next": "12.0.4"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PavloSeniv/voice-room-pnu.git"
   }
 }
