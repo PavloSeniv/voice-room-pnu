@@ -1,12 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import Welcome from "../components/loginStep/Welcome";
+import LoginActivation from "../components/loginStep/LoginActivation";
 import styles from "../styles/Home.module.css";
-
-// import React from 'react';
-// import Loader from "react-loader-spinner";
-// import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+import Script from "next/script";
 
 export default function Home() {
   return (
@@ -29,10 +24,9 @@ export default function Home() {
         <meta name="copyright" content="Seniv Pavlo" />
       </Head>
       <main className={styles.main + " " + styles.main__container}>
-        {/* <Loader type="Puff" color="#00BFFF" height={100} width={100} /> */}
-
-        <Welcome></Welcome>
+        <LoginActivation></LoginActivation>
       </main>
+      {/* <Script src="public/static/redirrect.js" strategy="afterInteractive" /> */}
     </div>
   );
 }

@@ -41,11 +41,6 @@
 
 /*-------- Login Start -------*/
 
-.main__bg-login-7 {
-  justify-content: center;
-  row-gap: 25px;
-}
-
 .main__title-login-2 {
   margin-top: 77px;
 }
@@ -1235,10 +1230,7 @@
 }
 
 @media (max-width: 767px) {
-  .main__bg-login-7 {
-    row-gap: 10px;
-  }
-
+ 
   .main__title-login-2 {
     margin-top: 3vmax;
   }
@@ -1371,11 +1363,6 @@
 
   .main__button-login-6 {
     margin-top: 3vmax;
-  }
-
-  .main__loader {
-    width: 50px;
-    height: 50px;
   }
 
   .rooms {

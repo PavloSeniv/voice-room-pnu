@@ -1,15 +1,15 @@
-import styles from "./Welcome.module.css";
+import styles from "./Login.module.css";
 import Link from "next/link";
 
 export default function Welcome(params) {
   return (
-    <sect className={styles.main__bg}>
+    <section className={styles.main__bg}>
       <h1 className={styles.main__title}>🎉 Welcome to Voice Room PNU! </h1>
       <h2 className={styles.main__info}>
         Discover millions of rooms, filled with fascinating and unexpected
         conversations. 😄
       </h2>
-      <Link href="/activationLoader">
+      <Link href="/login-2">
         <a className={styles.main__button}>
           <h3 className={styles.main__buttonTitle}>Get yor username</h3>
           <svg
@@ -29,6 +29,6 @@ export default function Welcome(params) {
       <Link href="/room">
         <a className={styles.main__linkSignIn}>Have invite text? Sign in</a>
       </Link>
-    </sect>
+    </section>
   );
 }
