@@ -1,4 +1,3 @@
-
 .header {
   max-width: 1580px;
   width: 100%;
@@ -35,7 +34,6 @@
   height: 50px;
   border-radius: 15px;
 }
-
 
 .rooms {
   margin-top: 70px;
@@ -169,7 +167,7 @@
   font-size: calc(20px + 22 * ((100vw - 320px) / 1600));
 }
 
-.rooms__listItem-logo-users {
+.rooms__listItemLogoUsers {
   margin-top: 6px;
   display: flex;
   -moz-column-gap: 16px;
@@ -178,7 +176,7 @@
   justify-content: flex-start;
 }
 
-.rooms__list-img-user {
+.rooms__listImgUser {
   display: flex;
   gap: 16px 9px;
   width: 116px;
@@ -187,30 +185,30 @@
   align-items: center;
 }
 
-.rooms__list-img-user-avatar {
+.rooms__listImgUserAvatar {
   width: 50px;
   height: 50px;
   border-radius: 15px;
 }
 
-.rooms__list-item-users {
+.rooms__listItemUsers {
   display: flex;
   flex-direction: column;
   row-gap: 5px;
 }
 
-.rooms__list-item-users-block {
+.rooms__listItemUsersBlock {
   display: flex;
   -moz-column-gap: 5px;
   column-gap: 5px;
   align-items: center;
 }
 
-.rooms__list-item-users-block svg {
+.rooms__listItemUsersBlock svg {
   fill: #fff;
 }
 
-.rooms__list-item-users-name {
+.rooms__listItemUsersName {
   font-family: Nunito;
   font-style: normal;
   font-weight: 600;
@@ -220,7 +218,7 @@
   font-size: calc(10px + 8 * ((100vw - 320px) / 1600));
 }
 
-.rooms__list-item-count-user {
+.rooms__listItemCountUser {
   display: flex;
   -moz-column-gap: 19px;
   column-gap: 19px;
@@ -228,18 +226,18 @@
   justify-content: flex-end;
 }
 
-.rooms__list-item-count-user-rooms {
+.rooms__listItemCountUserRooms {
   display: flex;
   -moz-column-gap: 5px;
   column-gap: 5px;
   align-items: center;
 }
 
-.rooms__list-item-count-user-rooms svg {
+.rooms__listItemCountUserRooms svg {
   fill: #fff;
 }
 
-.rooms__list-item-count-user-rooms-title {
+.rooms__listItemCountUserRoomsTitle {
   font-family: Nunito;
   font-style: normal;
   font-weight: normal;
@@ -249,18 +247,18 @@
   font-size: calc(10px + 5 * ((100vw - 320px) / 1600));
 }
 
-.rooms__list-item-count-user-voice {
+.rooms__listItemCountUserVoice {
   display: flex;
   -moz-column-gap: 5px;
   column-gap: 5px;
   align-items: center;
 }
 
-.rooms__list-item-count-user-voice svg {
+.rooms__listItemCountUserVoice svg {
   fill: #fff;
 }
 
-.rooms__list-item-count-user-voice-title {
+.rooms__listItemCountUserVoiceTitle {
   font-family: Nunito;
   font-style: normal;
   font-weight: normal;
@@ -270,10 +268,38 @@
   font-size: calc(10px + 5 * ((100vw - 320px) / 1600));
 }
 
+@media (max-width: 767px) {
+  .rooms {
+    margin-top: 3vmax;
+  }
 
+  .rooms__info {
+    justify-content: center;
+    row-gap: 20px;
+  }
 
+  .rooms__infoTitle {
+    justify-content: center;
+    row-gap: 20px;
+    margin-top: 3vmax;
+  }
 
+  .rooms__listItem {
+    padding: 2vmax;
+  }
 
+  .rooms__listItemTitle {
+    text-align: center;
+  }
+
+  .rooms__listItemLogoUsers {
+    justify-content: center;
+  }
+
+  .rooms__listImgUser {
+    justify-content: center;
+  }
+}
 
 @media (max-width: 575px) {
   .header__logo {
