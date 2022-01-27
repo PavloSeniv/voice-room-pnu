@@ -926,37 +926,6 @@
 }
 
 @media (max-width: 767px) {
-  .rooms {
-    margin-top: 3vmax;
-  }
-
-  .rooms__info {
-    justify-content: center;
-    row-gap: 20px;
-  }
-
-  .rooms__info-title {
-    justify-content: center;
-    row-gap: 20px;
-    margin-top: 3vmax;
-  }
-
-  .rooms__list-item {
-    padding: 2vmax;
-  }
-
-  .rooms__list-item-title {
-    text-align: center;
-  }
-
-  .rooms__list-item-logo-users {
-    justify-content: center;
-  }
-
-  .rooms__list-img-user {
-    justify-content: center;
-  }
-
   .people__list-voice-user {
     justify-content: center;
   }
