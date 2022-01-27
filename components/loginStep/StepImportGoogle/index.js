@@ -1,21 +1,21 @@
-import styles from "./StepWelcome.module.css";
+import styles from "./StepImportGoogle.module.css";
 import Link from "next/link";
 
-export default function Welcome(params) {
+export default function Google(params) {
   return (
     <section className={styles.main__bg}>
-      <h1 className={styles.main__title}>🎉 Welcome to Voice Room PNU! </h1>
-      <h2 className={styles.main__info}>
-        Discover millions of rooms, filled with fascinating and unexpected
-        conversations. 😄
-      </h2>
-      <Link href="/name">
+      <h1 className={styles.main__title}>Do yo wont import from Google?</h1>
+      <div className={styles.main__photoSelect}>
+        <div className={styles.main__photoPlaceholder}>PS</div>
+        <h3 className={styles.main__photoName}>Pavlo Seniv</h3>
+      </div>
+      <Link href="/import-done">
         <a className={styles.main__button}>
-          <h3 className={styles.main__buttonTitle}>Get yor username</h3>
+          <h3 className={styles.main__buttonTitle}>Import from Google</h3>
           <svg
             width="20"
             height="21"
-            viewBox="0 0 20 21"
+            viewbox="0 0 20 21"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >

@@ -1,21 +1,50 @@
-import styles from "./StepWelcome.module.css";
+import styles from "./StepImportDone.module.css";
 import Link from "next/link";
 
-export default function Welcome(params) {
+export default function GoogleDone(params) {
   return (
     <section className={styles.main__bg}>
-      <h1 className={styles.main__title}>🎉 Welcome to Voice Room PNU! </h1>
-      <h2 className={styles.main__info}>
-        Discover millions of rooms, filled with fascinating and unexpected
-        conversations. 😄
-      </h2>
-      <Link href="/name">
+      <h1 className={styles.main__title}>Okey, Seniv Pavlo</h1>
+      <h2 className={styles.main__info}>It`s your photo</h2>
+
+      <form action="" method="post" className={styles.main__photoSelect}>
+        <label
+          className={styles.main__photoInputCastomImg}
+          for="main__photo-input"
+        >
+          <picture>
+            <source
+              srcset="img/index/main/avatar_placeholder.webp"
+              type="image/webp"
+            />
+            <img
+              className={styles.main__photoImg}
+              src="img/index/main/avatar_placeholder.png"
+              alt="avatar_placeholder"
+            />
+          </picture>
+        </label>
+        <input
+          name="main__photo-input"
+          id="main__photo-input"
+          type="file"
+          className={styles.main__photoInput}
+        />
+        <label
+          className={styles.main__photoInputCastom}
+          for="main__photo-input"
+        >
+          Choose diffrent photo
+        </label>
+      </form>
+
+      <Link href="/phone">
         <a className={styles.main__button}>
-          <h3 className={styles.main__buttonTitle}>Get yor username</h3>
+          <h3 className={styles.main__buttonTitle}>Next</h3>
           <svg
             width="20"
             height="21"
-            viewBox="0 0 20 21"
+            viewbox="0 0 20 21"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -25,9 +54,6 @@ export default function Welcome(params) {
             />
           </svg>
         </a>
-      </Link>
-      <Link href="/room">
-        <a className={styles.main__linkSignIn}>Have invite text? Sign in</a>
       </Link>
     </section>
   );

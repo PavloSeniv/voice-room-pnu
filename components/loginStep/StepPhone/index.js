@@ -1,21 +1,28 @@
-import styles from "./StepWelcome.module.css";
+import styles from "./StepPhone.module.css";
 import Link from "next/link";
 
-export default function Welcome(params) {
+export default function GoogleDone(params) {
   return (
     <section className={styles.main__bg}>
-      <h1 className={styles.main__title}>🎉 Welcome to Voice Room PNU! </h1>
+      <h1 className={styles.main__title}>Enter your phone!</h1>
       <h2 className={styles.main__info}>
-        Discover millions of rooms, filled with fascinating and unexpected
-        conversations. 😄
+        We well send you a confirmation code
       </h2>
-      <Link href="/name">
+      <form action="" method="get">
+        <input
+          className={styles.main__inputTel}
+          type="number"
+          maxlength="10"
+          placeholder="+ 38 (067) 277-76-71"
+        />
+      </form>
+      <Link href="/phone-activation">
         <a className={styles.main__button}>
-          <h3 className={styles.main__buttonTitle}>Get yor username</h3>
+          <h3 className={styles.main__buttonTitle}>Next</h3>
           <svg
             width="20"
             height="21"
-            viewBox="0 0 20 21"
+            viewbox="0 0 20 21"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -26,9 +33,11 @@ export default function Welcome(params) {
           </svg>
         </a>
       </Link>
-      <Link href="/room">
-        <a className={styles.main__linkSignIn}>Have invite text? Sign in</a>
-      </Link>
+
+      <p className={styles.main__policy}>
+        By entering your number, your agreting to our Teams and Service and
+        Privacy Policy.
+      </p>
     </section>
   );
 }

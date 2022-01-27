@@ -187,16 +187,16 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.body {
+body {
   overflow-y: scroll;
 }
 
-.body.active {
+body.active {
   overflow-y: hidden;
 }
 
 @media (max-width: 768px) {
-  .body.active {
+  body.active {
     overflow-y: scroll;
   }
 }

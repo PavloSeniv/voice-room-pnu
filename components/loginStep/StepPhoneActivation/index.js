@@ -1,21 +1,43 @@
-import styles from "./StepWelcome.module.css";
+import styles from "./StepPhoneActivation.module.css";
 import Link from "next/link";
 
-export default function Welcome(params) {
+export default function GoogleDone(params) {
   return (
     <section className={styles.main__bg}>
-      <h1 className={styles.main__title}>🎉 Welcome to Voice Room PNU! </h1>
-      <h2 className={styles.main__info}>
-        Discover millions of rooms, filled with fascinating and unexpected
-        conversations. 😄
-      </h2>
-      <Link href="/name">
+      <h1 className={styles.main__title}>Enter your activate code!</h1>
+      <form action="" method="post" className={styles.main__inputNumber}>
+        <input
+          className={styles.main__inputItem}
+          type="number"
+          maxlength="1"
+          placeholder="1"
+        />
+        <input
+          className={styles.main__inputItem}
+          type="number"
+          maxlength="1"
+          placeholder="2"
+        />
+        <input
+          className={styles.main__inputItem}
+          type="number"
+          maxlength="1"
+          placeholder="3"
+        />
+        <input
+          className={styles.main__inputItem}
+          type="number"
+          maxlength="1"
+          placeholder="4"
+        />
+      </form>
+      <Link href="/activation">
         <a className={styles.main__button}>
-          <h3 className={styles.main__buttonTitle}>Get yor username</h3>
+          <h3 className={styles.main__buttonTitle}>Activate</h3>
           <svg
             width="20"
             height="21"
-            viewBox="0 0 20 21"
+            viewbox="0 0 20 21"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -26,9 +48,11 @@ export default function Welcome(params) {
           </svg>
         </a>
       </Link>
-      <Link href="/room">
-        <a className={styles.main__linkSignIn}>Have invite text? Sign in</a>
-      </Link>
+
+      <p className={styles.main__policy}>
+        By entering your number, your agreting to our Teams and Service and
+        Privacy Policy.
+      </p>
     </section>
   );
 }

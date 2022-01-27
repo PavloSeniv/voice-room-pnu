@@ -1,21 +1,27 @@
-import styles from "./StepWelcome.module.css";
+import styles from "./StepName.module.css";
 import Link from "next/link";
 
-export default function Welcome(params) {
+export default function Name(params) {
   return (
     <section className={styles.main__bg}>
-      <h1 className={styles.main__title}>🎉 Welcome to Voice Room PNU! </h1>
+      <h1 className={styles.main__title}>What`s yor full name?</h1>
       <h2 className={styles.main__info}>
-        Discover millions of rooms, filled with fascinating and unexpected
-        conversations. 😄
+        People use full name on chat! Thanks!!!
       </h2>
-      <Link href="/name">
+      <form action="" method="POST">
+        <input
+          className={styles.main__inputName}
+          type="text"
+          placeholder="Pavlo Seniv"
+        />
+      </form>
+      <Link href="/import-google">
         <a className={styles.main__button}>
-          <h3 className={styles.main__buttonTitle}>Get yor username</h3>
+          <h3 className={styles.main__buttonTitle}>Next</h3>
           <svg
             width="20"
             height="21"
-            viewBox="0 0 20 21"
+            viewbox="0 0 20 21"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -25,9 +31,6 @@ export default function Welcome(params) {
             />
           </svg>
         </a>
-      </Link>
-      <Link href="/room">
-        <a className={styles.main__linkSignIn}>Have invite text? Sign in</a>
       </Link>
     </section>
   );
