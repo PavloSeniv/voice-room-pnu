@@ -1,8 +1,6 @@
-import styles from "./LoginActivation.module.css";
-import { useRouter } from "next/router";
+import styles from "./StepActivation.module.css";
 
-export default function Welcome(params) {
-  const router = useRouter();
+export default function Activation(params) {
   return (
     <section className={styles.main__bg}>
       <h1 className={styles.main__title}>Activation in progress...</h1>

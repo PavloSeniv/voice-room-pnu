@@ -1,10 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import Welcome from "../components/loginStep/Welcome";
 import styles from "../styles/Home.module.css";
 
-export default function Home() {
+export default function Room() {
   return (
     <div className={styles.bg__white}>
       <Head>
@@ -25,7 +24,6 @@ export default function Home() {
         <meta name="copyright" content="Seniv Pavlo" />
       </Head>
       <main className={styles.main + " " + styles.main__container}>
-        <Welcome></Welcome>
       </main>
     </div>
   );

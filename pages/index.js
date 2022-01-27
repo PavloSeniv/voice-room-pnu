@@ -1,14 +1,8 @@
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import Welcome from "../components/loginStep/Welcome";
 import styles from "../styles/Home.module.css";
+import Welcome from "../components/loginStep/StepWelcome";
 
-// import React from 'react';
-// import Loader from "react-loader-spinner";
-// import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-
-export default function Home() {
+export default function Login() {
   return (
     <div className={styles.bg__login}>
       <Head>
@@ -29,8 +23,6 @@ export default function Home() {
         <meta name="copyright" content="Seniv Pavlo" />
       </Head>
       <main className={styles.main + " " + styles.main__container}>
-        {/* <Loader type="Puff" color="#00BFFF" height={100} width={100} /> */}
-
         <Welcome></Welcome>
       </main>
     </div>
