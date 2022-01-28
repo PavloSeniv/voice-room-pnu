@@ -1,5 +1,5 @@
 import styles from "./StepActivation.module.css";
-
+import Image from "next/image";
 export default function Activation(params) {
   return (
     <section className={styles.main__bg}>
