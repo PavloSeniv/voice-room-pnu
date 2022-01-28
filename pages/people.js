@@ -2,7 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
-import Rooms from "../components/Room/Rooms";
+import People from "../components/Room/People";
 export default function Room() {
   return (
     <div className={styles.bg__white}>
@@ -24,7 +24,7 @@ export default function Room() {
         <meta name="copyright" content="Seniv Pavlo" />
       </Head>
 
-      <Rooms></Rooms>
+      <People></People>
     </div>
   );
 }
