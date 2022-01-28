@@ -1,6 +1,10 @@
 import styles from "./Rooms.module.css";
 import Link from "next/link";
 
+import React from "react";
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
+
 export default function Welcome(params) {
   return (
     <section className={styles.bg__white + " " + styles.body}>
