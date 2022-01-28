@@ -17,7 +17,7 @@ export default function Room(params) {
           <Link href="/room">
             <a className={styles.header__blockLogo}>
               <picture>
-                <source srcset="img/index/main/logo.webp" type="image/webp" />
+                <source srcSet="img/index/main/logo.webp" type="image/webp" />
                 <img
                   src="img/index/main/logo.png"
                   alt="logo"
@@ -36,7 +36,7 @@ export default function Room(params) {
               <a>
                 <picture>
                   <source
-                    srcset="img/index/main/avatar_placeholder.webp"
+                    srcSet="img/index/main/avatar_placeholder.webp"
                     type="image/webp"
                   />
                   <img
@@ -62,7 +62,6 @@ export default function Room(params) {
                   width="25"
                   height="25"
                   fill="#000"
-                  class="bi bi-mortarboard-fill"
                   viewbox="0 0 16 16"
                 >
                   <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z" />
@@ -88,14 +87,14 @@ export default function Room(params) {
               <path
                 d="M2 12.85H24.1429"
                 stroke="white"
-                stroke-width="4"
-                stroke-linecap="round"
+                strokeWidth="4"
+                strokeLinecap="round"
               />
               <path
                 d="M13.0714 2L13.0714 23.7"
                 stroke="white"
-                stroke-width="4"
-                stroke-linecap="round"
+                strokeWidth="4"
+                strokeLinecap="round"
               />
             </svg>
             <h4 className={styles.rooms__newRoomTitle}>Start a room</h4>
@@ -117,7 +116,7 @@ export default function Room(params) {
                     <div className={styles.rooms__listImgUser}>
                       <picture>
                         <source
-                          srcset="img/index/main/avatar_placeholder_users.webp"
+                          srcSet="img/index/main/avatar_placeholder_users.webp"
                           type="image/webp"
                         />
                         <img
@@ -128,7 +127,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="img/index/main/avatar_placeholder_users_2.webp"
+                          srcSet="img/index/main/avatar_placeholder_users_2.webp"
                           type="image/webp"
                         />
                         <img
@@ -139,7 +138,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="img/index/main/avatar_placeholder_users_3.webp"
+                          srcSet="img/index/main/avatar_placeholder_users_3.webp"
                           type="image/webp"
                         />
                         <img
@@ -150,7 +149,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="img/index/main/avatar_placeholder_users_4.webp"
+                          srcSet="img/index/main/avatar_placeholder_users_4.webp"
                           type="image/webp"
                         />
                         <img
@@ -171,7 +170,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -187,7 +185,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -203,7 +200,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -219,7 +215,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -278,7 +273,7 @@ export default function Room(params) {
                     <div className={styles.rooms__listImgUser}>
                       <picture>
                         <source
-                          srcset="img/index/main/avatar_placeholder_users_5.webp"
+                          srcSet="img/index/main/avatar_placeholder_users_5.webp"
                           type="image/webp"
                         />
                         <img
@@ -289,7 +284,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="img/index/main/avatar_placeholder_users_6.webp"
+                          srcSet="img/index/main/avatar_placeholder_users_6.webp"
                           type="image/webp"
                         />
                         <img
@@ -300,7 +295,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="img/index/main/avatar_placeholder_users_7.webp"
+                          srcSet="img/index/main/avatar_placeholder_users_7.webp"
                           type="image/webp"
                         />
                         <img
@@ -311,7 +306,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="img/index/main/avatar_placeholder_users_8.webp"
+                          srcSet="img/index/main/avatar_placeholder_users_8.webp"
                           type="image/webp"
                         />
                         <img
@@ -332,7 +327,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -348,7 +342,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -364,7 +357,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -380,7 +372,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -439,7 +430,7 @@ export default function Room(params) {
                     <div className={styles.rooms__listImgUser}>
                       <picture>
                         <source
-                          srcset="https://picsum.photos/200?random=1"
+                          srcSet="https://picsum.photos/200?random=1"
                           type="image/webp"
                         />
                         <img
@@ -450,7 +441,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="https://picsum.photos/200?random=2"
+                          srcSet="https://picsum.photos/200?random=2"
                           type="image/webp"
                         />
                         <img
@@ -461,7 +452,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="https://picsum.photos/200?random=3"
+                          srcSet="https://picsum.photos/200?random=3"
                           type="image/webp"
                         />
                         <img
@@ -472,7 +463,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="https://picsum.photos/200?random=4"
+                          srcSet="https://picsum.photos/200?random=4"
                           type="image/webp"
                         />
                         <img
@@ -493,7 +484,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -509,7 +499,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -525,7 +514,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -541,7 +529,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -598,7 +585,7 @@ export default function Room(params) {
                     <div className={styles.rooms__listImgUser}>
                       <picture>
                         <source
-                          srcset="https://picsum.photos/200?random=5"
+                          srcSet="https://picsum.photos/200?random=5"
                           type="image/webp"
                         />
                         <img
@@ -609,7 +596,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="https://picsum.photos/200?random=6"
+                          srcSet="https://picsum.photos/200?random=6"
                           type="image/webp"
                         />
                         <img
@@ -620,7 +607,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="https://picsum.photos/200?random=7"
+                          srcSet="https://picsum.photos/200?random=7"
                           type="image/webp"
                         />
                         <img
@@ -631,7 +618,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="https://picsum.photos/200?random=8"
+                          srcSet="https://picsum.photos/200?random=8"
                           type="image/webp"
                         />
                         <img
@@ -652,7 +639,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -668,7 +654,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -684,7 +669,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -700,7 +684,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -757,7 +740,7 @@ export default function Room(params) {
                     <div className={styles.rooms__listImgUser}>
                       <picture>
                         <source
-                          srcset="https://picsum.photos/200?random=5"
+                          srcSet="https://picsum.photos/200?random=5"
                           type="image/webp"
                         />
                         <img
@@ -768,7 +751,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="https://picsum.photos/200?random=6"
+                          srcSet="https://picsum.photos/200?random=6"
                           type="image/webp"
                         />
                         <img
@@ -779,7 +762,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="https://picsum.photos/200?random=7"
+                          srcSet="https://picsum.photos/200?random=7"
                           type="image/webp"
                         />
                         <img
@@ -790,7 +773,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="https://picsum.photos/200?random=8"
+                          srcSet="https://picsum.photos/200?random=8"
                           type="image/webp"
                         />
                         <img
@@ -811,7 +794,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -827,7 +809,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -843,7 +824,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -859,7 +839,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -918,7 +897,7 @@ export default function Room(params) {
                     <div className={styles.rooms__listImgUser}>
                       <picture>
                         <source
-                          srcset="img/index/main/avatar_placeholder_users.webp"
+                          srcSet="img/index/main/avatar_placeholder_users.webp"
                           type="image/webp"
                         />
                         <img
@@ -929,7 +908,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="img/index/main/avatar_placeholder_users_2.webp"
+                          srcSet="img/index/main/avatar_placeholder_users_2.webp"
                           type="image/webp"
                         />
                         <img
@@ -940,7 +919,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="img/index/main/avatar_placeholder_users_3.webp"
+                          srcSet="img/index/main/avatar_placeholder_users_3.webp"
                           type="image/webp"
                         />
                         <img
@@ -951,7 +930,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="img/index/main/avatar_placeholder_users_4.webp"
+                          srcSet="img/index/main/avatar_placeholder_users_4.webp"
                           type="image/webp"
                         />
                         <img
@@ -972,7 +951,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -988,7 +966,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -1004,7 +981,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -1020,7 +996,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -1079,7 +1054,7 @@ export default function Room(params) {
                     <div className={styles.rooms__listImgUser}>
                       <picture>
                         <source
-                          srcset="img/index/main/avatar_placeholder_users_5.webp"
+                          srcSet="img/index/main/avatar_placeholder_users_5.webp"
                           type="image/webp"
                         />
                         <img
@@ -1090,7 +1065,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="img/index/main/avatar_placeholder_users_6.webp"
+                          srcSet="img/index/main/avatar_placeholder_users_6.webp"
                           type="image/webp"
                         />
                         <img
@@ -1101,7 +1076,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="img/index/main/avatar_placeholder_users_7.webp"
+                          srcSet="img/index/main/avatar_placeholder_users_7.webp"
                           type="image/webp"
                         />
                         <img
@@ -1112,7 +1087,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="img/index/main/avatar_placeholder_users_8.webp"
+                          srcSet="img/index/main/avatar_placeholder_users_8.webp"
                           type="image/webp"
                         />
                         <img
@@ -1133,7 +1108,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -1149,7 +1123,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -1165,7 +1138,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -1181,7 +1153,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -1240,7 +1211,7 @@ export default function Room(params) {
                     <div className={styles.rooms__listImgUser}>
                       <picture>
                         <source
-                          srcset="https://picsum.photos/200?random=1"
+                          srcSet="https://picsum.photos/200?random=1"
                           type="image/webp"
                         />
                         <img
@@ -1251,7 +1222,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="https://picsum.photos/200?random=2"
+                          srcSet="https://picsum.photos/200?random=2"
                           type="image/webp"
                         />
                         <img
@@ -1262,7 +1233,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="https://picsum.photos/200?random=3"
+                          srcSet="https://picsum.photos/200?random=3"
                           type="image/webp"
                         />
                         <img
@@ -1273,7 +1244,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="https://picsum.photos/200?random=4"
+                          srcSet="https://picsum.photos/200?random=4"
                           type="image/webp"
                         />
                         <img
@@ -1294,7 +1265,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -1310,7 +1280,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -1326,7 +1295,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -1342,7 +1310,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -1399,7 +1366,7 @@ export default function Room(params) {
                     <div className={styles.rooms__listImgUser}>
                       <picture>
                         <source
-                          srcset="https://picsum.photos/200?random=5"
+                          srcSet="https://picsum.photos/200?random=5"
                           type="image/webp"
                         />
                         <img
@@ -1410,7 +1377,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="https://picsum.photos/200?random=6"
+                          srcSet="https://picsum.photos/200?random=6"
                           type="image/webp"
                         />
                         <img
@@ -1421,7 +1388,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="https://picsum.photos/200?random=7"
+                          srcSet="https://picsum.photos/200?random=7"
                           type="image/webp"
                         />
                         <img
@@ -1432,7 +1399,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="https://picsum.photos/200?random=8"
+                          srcSet="https://picsum.photos/200?random=8"
                           type="image/webp"
                         />
                         <img
@@ -1453,7 +1420,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -1469,7 +1435,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -1485,7 +1450,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -1501,7 +1465,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -1558,7 +1521,7 @@ export default function Room(params) {
                     <div className={styles.rooms__listImgUser}>
                       <picture>
                         <source
-                          srcset="https://picsum.photos/200?random=5"
+                          srcSet="https://picsum.photos/200?random=5"
                           type="image/webp"
                         />
                         <img
@@ -1569,7 +1532,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="https://picsum.photos/200?random=6"
+                          srcSet="https://picsum.photos/200?random=6"
                           type="image/webp"
                         />
                         <img
@@ -1580,7 +1543,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="https://picsum.photos/200?random=7"
+                          srcSet="https://picsum.photos/200?random=7"
                           type="image/webp"
                         />
                         <img
@@ -1591,7 +1554,7 @@ export default function Room(params) {
                       </picture>
                       <picture>
                         <source
-                          srcset="https://picsum.photos/200?random=8"
+                          srcSet="https://picsum.photos/200?random=8"
                           type="image/webp"
                         />
                         <img
@@ -1612,7 +1575,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -1628,7 +1590,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -1644,7 +1605,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -1660,7 +1620,6 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          class="bi bi-mic-fill"
                           viewbox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
@@ -1876,14 +1835,14 @@ export default function Room(params) {
                   <path
                     d="M2 12.85H24.1429"
                     stroke="white"
-                    stroke-width="4"
-                    stroke-linecap="round"
+                    strokeWidth="4"
+                    strokeLinecap="round"
                   />
                   <path
                     d="M13.0714 2L13.0714 23.7"
                     stroke="white"
-                    stroke-width="4"
-                    stroke-linecap="round"
+                    strokeWidth="4"
+                    strokeLinecap="round"
                   />
                 </svg>
                 Let`s go
