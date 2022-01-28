@@ -2,6 +2,7 @@ import styles from "./Rooms.module.css";
 import stylesPopUp from "./Popup.module.css";
 
 import Link from "next/link";
+import Image from "next/image";
 
 import React, { useState } from "react";
 import Popup from "reactjs-popup";
@@ -17,9 +18,11 @@ export default function Room(params) {
           <Link href="/room">
             <a className={styles.header__blockLogo}>
               <picture>
-                <source srcSet="img/index/main/logo.webp" type="image/webp" />
-                <img
-                  src="img/index/main/logo.png"
+                <source srcSet="/img/index/main/logo.webp" type="image/webp" />
+                <Image
+                  width={100}
+                  height={50}
+                  src="/img/index/main/logo.png"
                   alt="logo"
                   className={styles.header__logo}
                 />
@@ -36,11 +39,13 @@ export default function Room(params) {
               <a>
                 <picture>
                   <source
-                    srcSet="img/index/main/avatar_placeholder.webp"
+                    srcSet="/img/index/main/avatar_placeholder.webp"
                     type="image/webp"
                   />
-                  <img
-                    src="img/index/main/avatar_placeholder.png"
+                  <Image
+                    width={50}
+                    height={50}
+                    src="/img/index/main/avatar_placeholder.png"
                     alt="avatar_placeholder"
                     className={styles.header__userAvatar}
                   />
@@ -116,44 +121,52 @@ export default function Room(params) {
                     <div className={styles.rooms__listImgUser}>
                       <picture>
                         <source
-                          srcSet="img/index/main/avatar_placeholder_users.webp"
+                          srcSet="/img/index/main/avatar_placeholder_users.webp"
                           type="image/webp"
                         />
-                        <img
-                          src="img/index/main/avatar_placeholder_users.png"
+                        <Image
+                          width={50}
+                          height={50}
+                          src="/img/index/main/avatar_placeholder_users.png"
                           alt="avatar_placeholder_user-1"
                           className={styles.rooms__listImgUserAvatar}
                         />
                       </picture>
                       <picture>
                         <source
-                          srcSet="img/index/main/avatar_placeholder_users_2.webp"
+                          srcSet="/img/index/main/avatar_placeholder_users_2.webp"
                           type="image/webp"
                         />
-                        <img
-                          src="img/index/main/avatar_placeholder_users_2.png"
+                        <Image
+                          width={50}
+                          height={50}
+                          src="/img/index/main/avatar_placeholder_users_2.png"
                           alt="avatar_placeholder_user-2"
                           className={styles.rooms__listImgUserAvatar}
                         />
                       </picture>
                       <picture>
                         <source
-                          srcSet="img/index/main/avatar_placeholder_users_3.webp"
+                          srcSet="/img/index/main/avatar_placeholder_users_3.webp"
                           type="image/webp"
                         />
-                        <img
-                          src="img/index/main/avatar_placeholder_users_3.png"
+                        <Image
+                          width={50}
+                          height={50}
+                          src="/img/index/main/avatar_placeholder_users_3.png"
                           alt="avatar_placeholder_user-3"
                           className={styles.rooms__listImgUserAvatar}
                         />
                       </picture>
                       <picture>
                         <source
-                          srcSet="img/index/main/avatar_placeholder_users_4.webp"
+                          srcSet="/img/index/main/avatar_placeholder_users_4.webp"
                           type="image/webp"
                         />
-                        <img
-                          src="img/index/main/avatar_placeholder_users_4.png"
+                        <Image
+                          width={50}
+                          height={50}
+                          src="/img/index/main/avatar_placeholder_users_4.png"
                           alt="avatar_placeholder_user-4"
                           className={styles.rooms__listImgUserAvatar}
                         />
@@ -234,7 +247,6 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        class="bi bi-person-fill"
                         viewbox="0 0 16 16"
                       >
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
@@ -250,7 +262,6 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        class="bi bi-mic"
                         viewиox="0 0 16 16"
                       >
                         <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -273,44 +284,52 @@ export default function Room(params) {
                     <div className={styles.rooms__listImgUser}>
                       <picture>
                         <source
-                          srcSet="img/index/main/avatar_placeholder_users_5.webp"
+                          srcSet="/img/index/main/avatar_placeholder_users_5.webp"
                           type="image/webp"
                         />
-                        <img
-                          src="img/index/main/avatar_placeholder_users_5.png"
+                        <Image
+                          width={50}
+                          height={50}
+                          src="/img/index/main/avatar_placeholder_users_5.png"
                           alt="avatar_placeholder_user-5"
                           className={styles.rooms__listImgUserAvatar}
                         />
                       </picture>
                       <picture>
                         <source
-                          srcSet="img/index/main/avatar_placeholder_users_6.webp"
+                          srcSet="/img/index/main/avatar_placeholder_users_6.webp"
                           type="image/webp"
                         />
-                        <img
-                          src="img/index/main/avatar_placeholder_users_6.png"
+                        <Image
+                          width={50}
+                          height={50}
+                          src="/img/index/main/avatar_placeholder_users_6.png"
                           alt="avatar_placeholder_user-6"
                           className={styles.rooms__listImgUserAvatar}
                         />
                       </picture>
                       <picture>
                         <source
-                          srcSet="img/index/main/avatar_placeholder_users_7.webp"
+                          srcSet="/img/index/main/avatar_placeholder_users_7.webp"
                           type="image/webp"
                         />
-                        <img
-                          src="img/index/main/avatar_placeholder_users_7.png"
+                        <Image
+                          width={50}
+                          height={50}
+                          src="/img/index/main/avatar_placeholder_users_7.png"
                           alt="avatar_placeholder_user-7"
                           className={styles.rooms__listImgUserAvatar}
                         />
                       </picture>
                       <picture>
                         <source
-                          srcSet="img/index/main/avatar_placeholder_users_8.webp"
+                          srcSet="/img/index/main/avatar_placeholder_users_8.webp"
                           type="image/webp"
                         />
-                        <img
-                          src="img/index/main/avatar_placeholder_users_8.png"
+                        <Image
+                          width={50}
+                          height={50}
+                          src="/img/index/main/avatar_placeholder_users_8.png"
                           alt="avatar_placeholder_user-8"
                           className={styles.rooms__listImgUserAvatar}
                         />
@@ -391,7 +410,6 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        class="bi bi-person-fill"
                         viewbox="0 0 16 16"
                       >
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
@@ -407,7 +425,6 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        class="bi bi-mic"
                         viewиox="0 0 16 16"
                       >
                         <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -433,7 +450,9 @@ export default function Room(params) {
                           srcSet="https://picsum.photos/200?random=1"
                           type="image/webp"
                         />
-                        <img
+                        <Image
+                          width={50}
+                          height={50}
                           src="https://picsum.photos/200?random=1"
                           alt="avatar_placeholder_user-random"
                           className={styles.rooms__listImgUserAvatar}
@@ -444,7 +463,9 @@ export default function Room(params) {
                           srcSet="https://picsum.photos/200?random=2"
                           type="image/webp"
                         />
-                        <img
+                        <Image
+                          width={50}
+                          height={50}
                           src="https://picsum.photos/200?random=2"
                           alt="avatar_placeholder_user-random"
                           className={styles.rooms__listImgUserAvatar}
@@ -455,7 +476,9 @@ export default function Room(params) {
                           srcSet="https://picsum.photos/200?random=3"
                           type="image/webp"
                         />
-                        <img
+                        <Image
+                          width={50}
+                          height={50}
                           src="https://picsum.photos/200?random=3"
                           alt="avatar_placeholder_user-random"
                           className={styles.rooms__listImgUserAvatar}
@@ -466,7 +489,9 @@ export default function Room(params) {
                           srcSet="https://picsum.photos/200?random=4"
                           type="image/webp"
                         />
-                        <img
+                        <Image
+                          width={50}
+                          height={50}
                           src="https://picsum.photos/200?random=4"
                           alt="avatar_placeholder_user-random"
                           className={styles.rooms__listImgUserAvatar}
@@ -548,7 +573,6 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        class="bi bi-person-fill"
                         viewbox="0 0 16 16"
                       >
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
@@ -564,7 +588,6 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        class="bi bi-mic"
                         viewиox="0 0 16 16"
                       >
                         <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -588,7 +611,9 @@ export default function Room(params) {
                           srcSet="https://picsum.photos/200?random=5"
                           type="image/webp"
                         />
-                        <img
+                        <Image
+                          width={50}
+                          height={50}
                           src="https://picsum.photos/200?random=5"
                           alt="avatar_placeholder_user-random"
                           className={styles.rooms__listImgUserAvatar}
@@ -599,7 +624,9 @@ export default function Room(params) {
                           srcSet="https://picsum.photos/200?random=6"
                           type="image/webp"
                         />
-                        <img
+                        <Image
+                          width={50}
+                          height={50}
                           src="https://picsum.photos/200?random=6"
                           alt="avatar_placeholder_user-random"
                           className={styles.rooms__listImgUserAvatar}
@@ -610,7 +637,9 @@ export default function Room(params) {
                           srcSet="https://picsum.photos/200?random=7"
                           type="image/webp"
                         />
-                        <img
+                        <Image
+                          width={50}
+                          height={50}
                           src="https://picsum.photos/200?random=7"
                           alt="avatar_placeholder_user-random"
                           className={styles.rooms__listImgUserAvatar}
@@ -621,7 +650,9 @@ export default function Room(params) {
                           srcSet="https://picsum.photos/200?random=8"
                           type="image/webp"
                         />
-                        <img
+                        <Image
+                          width={50}
+                          height={50}
                           src="https://picsum.photos/200?random=8"
                           alt="avatar_placeholder_user-random"
                           className={styles.rooms__listImgUserAvatar}
@@ -703,7 +734,6 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        class="bi bi-person-fill"
                         viewbox="0 0 16 16"
                       >
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
@@ -719,7 +749,6 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        class="bi bi-mic"
                         viewиox="0 0 16 16"
                       >
                         <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -743,7 +772,9 @@ export default function Room(params) {
                           srcSet="https://picsum.photos/200?random=5"
                           type="image/webp"
                         />
-                        <img
+                        <Image
+                          width={50}
+                          height={50}
                           src="https://picsum.photos/200?random=5"
                           alt="avatar_placeholder_user-random"
                           className={styles.rooms__listImgUserAvatar}
@@ -754,7 +785,9 @@ export default function Room(params) {
                           srcSet="https://picsum.photos/200?random=6"
                           type="image/webp"
                         />
-                        <img
+                        <Image
+                          width={50}
+                          height={50}
                           src="https://picsum.photos/200?random=6"
                           alt="avatar_placeholder_user-random"
                           className={styles.rooms__listImgUserAvatar}
@@ -765,7 +798,9 @@ export default function Room(params) {
                           srcSet="https://picsum.photos/200?random=7"
                           type="image/webp"
                         />
-                        <img
+                        <Image
+                          width={50}
+                          height={50}
                           src="https://picsum.photos/200?random=7"
                           alt="avatar_placeholder_user-random"
                           className={styles.rooms__listImgUserAvatar}
@@ -776,7 +811,9 @@ export default function Room(params) {
                           srcSet="https://picsum.photos/200?random=8"
                           type="image/webp"
                         />
-                        <img
+                        <Image
+                          width={50}
+                          height={50}
                           src="https://picsum.photos/200?random=8"
                           alt="avatar_placeholder_user-random"
                           className={styles.rooms__listImgUserAvatar}
@@ -858,7 +895,6 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        class="bi bi-person-fill"
                         viewbox="0 0 16 16"
                       >
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
@@ -874,7 +910,6 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        class="bi bi-mic"
                         viewиox="0 0 16 16"
                       >
                         <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -897,44 +932,52 @@ export default function Room(params) {
                     <div className={styles.rooms__listImgUser}>
                       <picture>
                         <source
-                          srcSet="img/index/main/avatar_placeholder_users.webp"
+                          srcSet="/img/index/main/avatar_placeholder_users.webp"
                           type="image/webp"
                         />
-                        <img
-                          src="img/index/main/avatar_placeholder_users.png"
+                        <Image
+                          width={50}
+                          height={50}
+                          src="/img/index/main/avatar_placeholder_users.png"
                           alt="avatar_placeholder_user-1"
                           className={styles.rooms__listImgUserAvatar}
                         />
                       </picture>
                       <picture>
                         <source
-                          srcSet="img/index/main/avatar_placeholder_users_2.webp"
+                          srcSet="/img/index/main/avatar_placeholder_users_2.webp"
                           type="image/webp"
                         />
-                        <img
-                          src="img/index/main/avatar_placeholder_users_2.png"
+                        <Image
+                          width={50}
+                          height={50}
+                          src="/img/index/main/avatar_placeholder_users_2.png"
                           alt="avatar_placeholder_user-2"
                           className={styles.rooms__listImgUserAvatar}
                         />
                       </picture>
                       <picture>
                         <source
-                          srcSet="img/index/main/avatar_placeholder_users_3.webp"
+                          srcSet="/img/index/main/avatar_placeholder_users_3.webp"
                           type="image/webp"
                         />
-                        <img
-                          src="img/index/main/avatar_placeholder_users_3.png"
+                        <Image
+                          width={50}
+                          height={50}
+                          src="/img/index/main/avatar_placeholder_users_3.png"
                           alt="avatar_placeholder_user-3"
                           className={styles.rooms__listImgUserAvatar}
                         />
                       </picture>
                       <picture>
                         <source
-                          srcSet="img/index/main/avatar_placeholder_users_4.webp"
+                          srcSet="/img/index/main/avatar_placeholder_users_4.webp"
                           type="image/webp"
                         />
-                        <img
-                          src="img/index/main/avatar_placeholder_users_4.png"
+                        <Image
+                          width={50}
+                          height={50}
+                          src="/img/index/main/avatar_placeholder_users_4.png"
                           alt="avatar_placeholder_user-4"
                           className={styles.rooms__listImgUserAvatar}
                         />
@@ -1015,7 +1058,6 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        class="bi bi-person-fill"
                         viewbox="0 0 16 16"
                       >
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
@@ -1031,7 +1073,6 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        class="bi bi-mic"
                         viewиox="0 0 16 16"
                       >
                         <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -1054,44 +1095,52 @@ export default function Room(params) {
                     <div className={styles.rooms__listImgUser}>
                       <picture>
                         <source
-                          srcSet="img/index/main/avatar_placeholder_users_5.webp"
+                          srcSet="/img/index/main/avatar_placeholder_users_5.webp"
                           type="image/webp"
                         />
-                        <img
-                          src="img/index/main/avatar_placeholder_users_5.png"
+                        <Image
+                          width={50}
+                          height={50}
+                          src="/img/index/main/avatar_placeholder_users_5.png"
                           alt="avatar_placeholder_user-5"
                           className={styles.rooms__listImgUserAvatar}
                         />
                       </picture>
                       <picture>
                         <source
-                          srcSet="img/index/main/avatar_placeholder_users_6.webp"
+                          srcSet="/img/index/main/avatar_placeholder_users_6.webp"
                           type="image/webp"
                         />
-                        <img
-                          src="img/index/main/avatar_placeholder_users_6.png"
+                        <Image
+                          width={50}
+                          height={50}
+                          src="/img/index/main/avatar_placeholder_users_6.png"
                           alt="avatar_placeholder_user-6"
                           className={styles.rooms__listImgUserAvatar}
                         />
                       </picture>
                       <picture>
                         <source
-                          srcSet="img/index/main/avatar_placeholder_users_7.webp"
+                          srcSet="/img/index/main/avatar_placeholder_users_7.webp"
                           type="image/webp"
                         />
-                        <img
-                          src="img/index/main/avatar_placeholder_users_7.png"
+                        <Image
+                          width={50}
+                          height={50}
+                          src="/img/index/main/avatar_placeholder_users_7.png"
                           alt="avatar_placeholder_user-7"
                           className={styles.rooms__listImgUserAvatar}
                         />
                       </picture>
                       <picture>
                         <source
-                          srcSet="img/index/main/avatar_placeholder_users_8.webp"
+                          srcSet="/img/index/main/avatar_placeholder_users_8.webp"
                           type="image/webp"
                         />
-                        <img
-                          src="img/index/main/avatar_placeholder_users_8.png"
+                        <Image
+                          width={50}
+                          height={50}
+                          src="/img/index/main/avatar_placeholder_users_8.png"
                           alt="avatar_placeholder_user-8"
                           className={styles.rooms__listImgUserAvatar}
                         />
@@ -1172,7 +1221,6 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        class="bi bi-person-fill"
                         viewbox="0 0 16 16"
                       >
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
@@ -1188,7 +1236,6 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        class="bi bi-mic"
                         viewиox="0 0 16 16"
                       >
                         <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -1214,7 +1261,9 @@ export default function Room(params) {
                           srcSet="https://picsum.photos/200?random=1"
                           type="image/webp"
                         />
-                        <img
+                        <Image
+                          width={50}
+                          height={50}
                           src="https://picsum.photos/200?random=1"
                           alt="avatar_placeholder_user-random"
                           className={styles.rooms__listImgUserAvatar}
@@ -1225,7 +1274,9 @@ export default function Room(params) {
                           srcSet="https://picsum.photos/200?random=2"
                           type="image/webp"
                         />
-                        <img
+                        <Image
+                          width={50}
+                          height={50}
                           src="https://picsum.photos/200?random=2"
                           alt="avatar_placeholder_user-random"
                           className={styles.rooms__listImgUserAvatar}
@@ -1236,7 +1287,9 @@ export default function Room(params) {
                           srcSet="https://picsum.photos/200?random=3"
                           type="image/webp"
                         />
-                        <img
+                        <Image
+                          width={50}
+                          height={50}
                           src="https://picsum.photos/200?random=3"
                           alt="avatar_placeholder_user-random"
                           className={styles.rooms__listImgUserAvatar}
@@ -1247,7 +1300,9 @@ export default function Room(params) {
                           srcSet="https://picsum.photos/200?random=4"
                           type="image/webp"
                         />
-                        <img
+                        <Image
+                          width={50}
+                          height={50}
                           src="https://picsum.photos/200?random=4"
                           alt="avatar_placeholder_user-random"
                           className={styles.rooms__listImgUserAvatar}
@@ -1329,7 +1384,6 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        class="bi bi-person-fill"
                         viewbox="0 0 16 16"
                       >
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
@@ -1345,7 +1399,6 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        class="bi bi-mic"
                         viewиox="0 0 16 16"
                       >
                         <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -1369,7 +1422,9 @@ export default function Room(params) {
                           srcSet="https://picsum.photos/200?random=5"
                           type="image/webp"
                         />
-                        <img
+                        <Image
+                          width={50}
+                          height={50}
                           src="https://picsum.photos/200?random=5"
                           alt="avatar_placeholder_user-random"
                           className={styles.rooms__listImgUserAvatar}
@@ -1380,7 +1435,9 @@ export default function Room(params) {
                           srcSet="https://picsum.photos/200?random=6"
                           type="image/webp"
                         />
-                        <img
+                        <Image
+                          width={50}
+                          height={50}
                           src="https://picsum.photos/200?random=6"
                           alt="avatar_placeholder_user-random"
                           className={styles.rooms__listImgUserAvatar}
@@ -1391,7 +1448,9 @@ export default function Room(params) {
                           srcSet="https://picsum.photos/200?random=7"
                           type="image/webp"
                         />
-                        <img
+                        <Image
+                          width={50}
+                          height={50}
                           src="https://picsum.photos/200?random=7"
                           alt="avatar_placeholder_user-random"
                           className={styles.rooms__listImgUserAvatar}
@@ -1402,7 +1461,9 @@ export default function Room(params) {
                           srcSet="https://picsum.photos/200?random=8"
                           type="image/webp"
                         />
-                        <img
+                        <Image
+                          width={50}
+                          height={50}
                           src="https://picsum.photos/200?random=8"
                           alt="avatar_placeholder_user-random"
                           className={styles.rooms__listImgUserAvatar}
@@ -1484,7 +1545,6 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        class="bi bi-person-fill"
                         viewbox="0 0 16 16"
                       >
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
@@ -1500,7 +1560,6 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        class="bi bi-mic"
                         viewиox="0 0 16 16"
                       >
                         <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -1524,7 +1583,9 @@ export default function Room(params) {
                           srcSet="https://picsum.photos/200?random=5"
                           type="image/webp"
                         />
-                        <img
+                        <Image
+                          width={50}
+                          height={50}
                           src="https://picsum.photos/200?random=5"
                           alt="avatar_placeholder_user-random"
                           className={styles.rooms__listImgUserAvatar}
@@ -1535,7 +1596,9 @@ export default function Room(params) {
                           srcSet="https://picsum.photos/200?random=6"
                           type="image/webp"
                         />
-                        <img
+                        <Image
+                          width={50}
+                          height={50}
                           src="https://picsum.photos/200?random=6"
                           alt="avatar_placeholder_user-random"
                           className={styles.rooms__listImgUserAvatar}
@@ -1546,7 +1609,9 @@ export default function Room(params) {
                           srcSet="https://picsum.photos/200?random=7"
                           type="image/webp"
                         />
-                        <img
+                        <Image
+                          width={50}
+                          height={50}
                           src="https://picsum.photos/200?random=7"
                           alt="avatar_placeholder_user-random"
                           className={styles.rooms__listImgUserAvatar}
@@ -1557,7 +1622,9 @@ export default function Room(params) {
                           srcSet="https://picsum.photos/200?random=8"
                           type="image/webp"
                         />
-                        <img
+                        <Image
+                          width={50}
+                          height={50}
                           src="https://picsum.photos/200?random=8"
                           alt="avatar_placeholder_user-random"
                           className={styles.rooms__listImgUserAvatar}
@@ -1639,7 +1706,6 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        class="bi bi-person-fill"
                         viewbox="0 0 16 16"
                       >
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
@@ -1655,7 +1721,6 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        class="bi bi-mic"
                         viewиox="0 0 16 16"
                       >
                         <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -1681,7 +1746,7 @@ export default function Room(params) {
             <path
               d="M15 14.293 28.789.504l.707.707L15.707 15l13.789 13.789-.707.707L15 15.707 1.211 29.496l-.707-.707L14.293 15 .504 1.211l.707-.707L15 14.293z"
               fill="#000"
-              fill-rule="evenodd"
+              fillRule="evenodd"
             />
           </svg>
         </div>
