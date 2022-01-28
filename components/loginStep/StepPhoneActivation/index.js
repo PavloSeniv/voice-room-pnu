@@ -9,25 +9,25 @@ export default function GoogleDone(params) {
         <input
           className={styles.main__inputItem}
           type="number"
-          maxlength="1"
+          maxLength="1"
           placeholder="1"
         />
         <input
           className={styles.main__inputItem}
           type="number"
-          maxlength="1"
+          maxLength="1"
           placeholder="2"
         />
         <input
           className={styles.main__inputItem}
           type="number"
-          maxlength="1"
+          maxLength="1"
           placeholder="3"
         />
         <input
           className={styles.main__inputItem}
           type="number"
-          maxlength="1"
+          maxLength="1"
           placeholder="4"
         />
       </form>

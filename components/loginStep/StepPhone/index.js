@@ -12,7 +12,7 @@ export default function GoogleDone(params) {
         <input
           className={styles.main__inputTel}
           type="number"
-          maxlength="10"
+          maxLength="10"
           placeholder="+ 38 (067) 277-76-71"
         />
       </form>

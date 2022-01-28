@@ -10,11 +10,11 @@ export default function GoogleDone(params) {
       <form action="" method="post" className={styles.main__photoSelect}>
         <label
           className={styles.main__photoInputCastomImg}
-          for="main__photo-input"
+          htmlFor="main__photo-input"
         >
           <picture>
             <source
-              srcset="img/index/main/avatar_placeholder.webp"
+              srcSet="img/index/main/avatar_placeholder.webp"
               type="image/webp"
             />
             <img
@@ -32,7 +32,7 @@ export default function GoogleDone(params) {
         />
         <label
           className={styles.main__photoInputCastom}
-          for="main__photo-input"
+          htmlFor="main__photo-input"
         >
           Choose diffrent photo
         </label>
