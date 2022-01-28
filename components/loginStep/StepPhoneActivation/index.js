@@ -31,7 +31,7 @@ export default function GoogleDone(params) {
           placeholder="4"
         />
       </form>
-      <Link href="/activation">
+      <Link href="/activation-loader">
         <a className={styles.main__button}>
           <h3 className={styles.main__buttonTitle}>Activate</h3>
           <svg
