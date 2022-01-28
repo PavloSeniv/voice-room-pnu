@@ -17,7 +17,9 @@ export default function GoogleDone(params) {
               srcSet="img/index/main/avatar_placeholder.webp"
               type="image/webp"
             />
-            <img
+            <Image
+              width={200}
+              height={200}
               className={styles.main__photoImg}
               src="img/index/main/avatar_placeholder.png"
               alt="avatar_placeholder"
