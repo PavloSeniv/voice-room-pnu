@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Welcome from "../components/loginStep/StepWelcome";
+import { Oval } from "react-loader-spinner";
 
 export default function Login() {
   return (
@@ -24,6 +25,7 @@ export default function Login() {
       </Head>
       <main className={styles.main + " " + styles.main__container}>
         <Welcome></Welcome>
+        {/* <Oval  color="#00BFFF" height={80} width={80} /> */}
       </main>
     </div>
   );

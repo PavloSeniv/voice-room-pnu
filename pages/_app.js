@@ -4,6 +4,7 @@ import Router from "next/router";
 import nProgress from "nprogress";
 
 //Імпорт з node_modules
+import "../node_modules/react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import "reactjs-popup/dist/index.css";
 import "../styles/PopUp.css";
 
