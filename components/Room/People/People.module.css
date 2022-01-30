@@ -34,269 +34,231 @@
   height: 50px;
   border-radius: 15px;
 }
-
-.rooms {
+.people {
   margin-top: 70px;
 }
 
-.rooms__container {
+.people__container {
   max-width: 1580px;
   width: 100%;
   margin: 0 auto;
 }
 
-.rooms__info {
+.people__info {
   display: flex;
-  flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-between;
   padding: 0 2vmax;
 }
 
-.rooms__infoTitle {
+.people__info-title {
   display: flex;
-  flex-wrap: wrap;
-  -moz-column-gap: 16px;
-  column-gap: 16px;
+  -moz-column-gap: 46px;
+  column-gap: 46px;
   justify-content: center;
   margin-top: 77px;
-}
-
-.rooms__title {
-  font-family: Nunito;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 65px;
-  color: #000;
-  font-size: calc(20px + 28 * ((100vw - 320px) / 1600));
-}
-
-.rooms__buttonExplore {
-  display: flex;
   align-items: center;
-  -moz-column-gap: 20px;
-  column-gap: 20px;
-  width: 250px;
-  height: 70px;
-  background: #e0e0e0;
-  border-radius: 50px;
-  padding: 10px 19px;
-  justify-content: center;
 }
 
-.rooms__buttonExploreTitle {
+.people__title {
   font-family: Nunito;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 30px;
   line-height: 41px;
   color: #000;
-  font-size: calc(20px + 10 * ((100vw - 320px) / 1600));
-}
-
-.rooms__newRoom {
-  display: flex;
-  align-items: center;
-  -moz-column-gap: 12px;
-  column-gap: 12px;
-  width: 250px;
-  height: 70px;
-  background: #55ab67;
-  border-radius: 50px;
-  padding: 10px 16px;
-  justify-content: center;
-}
-
-.rooms__newRoomTitle {
-  font-family: Nunito;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 41px;
-  color: #fff;
   font-size: calc(21px + 9 * ((100vw - 320px) / 1600));
 }
 
-.rooms__listBg {
+.people__list-user-bg {
   background-color: #f1efe5;
   border-radius: 50px 50px 0px 0px;
   margin-top: 54px;
-  min-height: 100vh;
-  max-height: -webkit-max-content;
-  max-height: -moz-max-content;
-  max-height: max-content;
-  padding: 0 2vmax 2vmax 2vmax;
-}
-
-.rooms__listContainer {
-  max-width: 1580px;
-  width: 100%;
-  margin: 0 auto;
-}
-
-.rooms__list {
-  padding-top: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  -moz-column-gap: 115px;
-  column-gap: 115px;
-  row-gap: 40px;
-  align-items: center;
-  justify-content: center;
-}
-
-.rooms__listItem {
-  max-width: 450px;
-  width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  background: #5b75a6;
-  border-radius: 35px;
-  padding: 22px 47px 24px 47px;
 }
 
-.rooms__listItemTitle {
+.people__list-user-container {
+  max-width: 1580px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2vmax;
+}
+
+.people__list-info-room {
+  padding: 2vmax;
+  padding-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 20px;
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+}
+
+.people__list-room-title {
   font-family: Nunito;
   font-style: normal;
   font-weight: bold;
   font-size: 42px;
   line-height: 57px;
-  color: #fff;
+  color: #000;
   font-size: calc(20px + 22 * ((100vw - 320px) / 1600));
 }
 
-.rooms__listItemLogoUsers {
-  margin-top: 6px;
+.people__block-leave {
   display: flex;
-  -moz-column-gap: 16px;
-  column-gap: 16px;
+  -moz-column-gap: 34px;
+  column-gap: 34px;
+}
+
+.people__button-hand {
+  width: 70px;
+  height: 70px;
+  background: #f2f2f2;
+  border-radius: 50px;
+}
+
+.people__button-hand:hover svg {
+  fill: #ebeb0a;
+}
+
+.people__button-leave {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  max-width: 260.4px;
+  width: 100%;
+  height: 70px;
+  background: #f2f2f2;
+  border-radius: 60px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  color: #55ab67;
+  font-size: calc(20px + 10 * ((100vw - 320px) / 1600));
+}
+
+.people__button-leave:hover {
+  background: #5b75a6;
+  color: #000;
+}
+
+.people__list-voice-user {
+  display: flex;
+  gap: 40px 10px;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
 }
 
-.rooms__listImgUser {
-  display: flex;
-  gap: 16px 9px;
-  width: 116px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.rooms__listImgUserAvatar {
-  width: 50px;
-  height: 50px;
-  border-radius: 15px;
-}
-
-.rooms__listItemUsers {
+.people__list-voice-user-item {
   display: flex;
   flex-direction: column;
   row-gap: 5px;
-}
-
-.rooms__listItemUsersBlock {
-  display: flex;
-  -moz-column-gap: 5px;
-  column-gap: 5px;
   align-items: center;
 }
 
-.rooms__listItemUsersBlock svg {
-  fill: #fff;
+.people__list-voice-user-block-photo {
+  border: 4px solid #5b75a6;
+  border-radius: 35px;
+  position: relative;
+  padding: 5px;
 }
 
-.rooms__listItemUsersName {
-  font-family: Nunito;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 25px;
-  color: #fff;
-  font-size: calc(10px + 8 * ((100vw - 320px) / 1600));
+.people__list-voice-user-item-photo {
+  width: 105px;
+  height: 105px;
+  border-radius: 35px;
+  border: 1.875px solid rgba(0, 0, 0, 0.2);
 }
 
-.rooms__listItemCountUser {
+.people__list-voice-user-item-active {
   display: flex;
-  -moz-column-gap: 19px;
-  column-gap: 19px;
-  margin-top: 16px;
-  justify-content: flex-end;
-}
-
-.rooms__listItemCountUserRooms {
-  display: flex;
-  -moz-column-gap: 5px;
-  column-gap: 5px;
+  justify-content: center;
   align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #ffffff;
+  box-shadow: 0px 1px 8px rgba(51, 51, 51, 0.2);
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
 }
 
-.rooms__listItemCountUserRooms svg {
-  fill: #fff;
+.people__list-voice-user-item-active svg {
+  fill: #000;
 }
 
-.rooms__listItemCountUserRoomsTitle {
+.people__list-voice-user-item-name {
   font-family: Nunito;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
-  line-height: 20px;
-  color: #fff;
-  font-size: calc(10px + 5 * ((100vw - 320px) / 1600));
+  font-size: 35px;
+  line-height: 48px;
+  color: #000;
+  font-size: calc(25px + 10 * ((100vw - 320px) / 1600));
 }
 
-.rooms__listItemCountUserVoice {
+.people__block-users {
+  margin-top: 12px;
+}
+
+.people__block-users-title {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 41px;
+  color: #333;
+  font-size: calc(20px + 10 * ((100vw - 320px) / 1600));
+}
+
+.people__block-users-list {
+  margin-top: 39px;
   display: flex;
-  -moz-column-gap: 5px;
-  column-gap: 5px;
+  flex-wrap: wrap;
+  gap: 20px 29px;
+  align-items: center;
+  justify-content: center;
+}
+
+.people__block-users-item {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
   align-items: center;
 }
 
-.rooms__listItemCountUserVoice svg {
-  fill: #fff;
+.people__block-users-photo {
+  width: 105px;
+  height: 105px;
+  border-radius: 35px;
 }
 
-.rooms__listItemCountUserVoiceTitle {
+.people__block-users-name {
   font-family: Nunito;
   font-style: normal;
   font-weight: normal;
-  font-size: 15px;
-  line-height: 20px;
-  color: #fff;
-  font-size: calc(10px + 5 * ((100vw - 320px) / 1600));
+  font-size: 35px;
+  line-height: 48px;
+  color: #000;
+  font-size: calc(20px + 15 * ((100vw - 320px) / 1600));
+}
+
+@media (max-width: 877px) {
+  .people__list-info-room {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 767px) {
-  .rooms {
-    margin-top: 3vmax;
-  }
-
-  .rooms__info {
-    justify-content: center;
-    row-gap: 20px;
-  }
-
-  .rooms__infoTitle {
-    justify-content: center;
-    row-gap: 20px;
-    margin-top: 3vmax;
-  }
-
-  .rooms__listItem {
-    padding: 2vmax;
-  }
-
-  .rooms__listItemTitle {
-    text-align: center;
-  }
-
-  .rooms__listItemLogoUsers {
-    justify-content: center;
-  }
-
-  .rooms__listImgUser {
+  .people__list-voice-user {
     justify-content: center;
   }
 }
@@ -309,5 +271,8 @@
   .header__user {
     -moz-column-gap: 20px;
     column-gap: 20px;
+  }
+  .people__list-room-title {
+    text-align: center;
   }
 }
