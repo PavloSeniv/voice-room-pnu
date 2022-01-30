@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Rooms from "../components/Room/Rooms";
+import Script from "next/script";
 
 export default function Room() {
   return (
@@ -23,6 +24,7 @@ export default function Room() {
         <meta name="copyright" content="Seniv Pavlo" />
       </Head>
       <Rooms></Rooms>
+      <Script src="../public/js/app.min.js" />
     </div>
   );
 }
