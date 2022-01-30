@@ -51,7 +51,7 @@
   padding: 0 2vmax;
 }
 
-.people__info-title {
+.people__info_title {
   display: flex;
   -moz-column-gap: 46px;
   column-gap: 46px;
@@ -70,7 +70,7 @@
   font-size: calc(21px + 9 * ((100vw - 320px) / 1600));
 }
 
-.people__list-user-bg {
+.people__list_user_bg {
   background-color: #f1efe5;
   border-radius: 50px 50px 0px 0px;
   margin-top: 54px;
@@ -79,14 +79,14 @@
   height: max-content;
 }
 
-.people__list-user-container {
+.people__list_user_container {
   max-width: 1580px;
   width: 100%;
   margin: 0 auto;
   padding: 2vmax;
 }
 
-.people__list-info-room {
+.people__list_info_room {
   padding: 2vmax;
   padding-top: 40px;
   display: flex;
@@ -97,7 +97,7 @@
   column-gap: 20px;
 }
 
-.people__list-room-title {
+.people__list_room_title {
   font-family: Nunito;
   font-style: normal;
   font-weight: bold;
@@ -107,24 +107,24 @@
   font-size: calc(20px + 22 * ((100vw - 320px) / 1600));
 }
 
-.people__block-leave {
+.people__block_leave {
   display: flex;
   -moz-column-gap: 34px;
   column-gap: 34px;
 }
 
-.people__button-hand {
+.people__button_hand {
   width: 70px;
   height: 70px;
   background: #f2f2f2;
   border-radius: 50px;
 }
 
-.people__button-hand:hover svg {
+.people__button_hand:hover svg {
   fill: #ebeb0a;
 }
 
-.people__button-leave {
+.people__button_leave {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -143,12 +143,12 @@
   font-size: calc(20px + 10 * ((100vw - 320px) / 1600));
 }
 
-.people__button-leave:hover {
+.people__button_leave:hover {
   background: #5b75a6;
   color: #000;
 }
 
-.people__list-voice-user {
+.people__list_voice_user {
   display: flex;
   gap: 40px 10px;
   flex-wrap: wrap;
@@ -156,28 +156,28 @@
   justify-content: flex-start;
 }
 
-.people__list-voice-user-item {
+.people__list_voice_user_item {
   display: flex;
   flex-direction: column;
   row-gap: 5px;
   align-items: center;
 }
 
-.people__list-voice-user-block-photo {
+.people__list_voice_user_block_photo {
   border: 4px solid #5b75a6;
   border-radius: 35px;
   position: relative;
   padding: 5px;
 }
 
-.people__list-voice-user-item-photo {
+.people__list_voice_user_item_photo {
   width: 105px;
   height: 105px;
   border-radius: 35px;
   border: 1.875px solid rgba(0, 0, 0, 0.2);
 }
 
-.people__list-voice-user-item-active {
+.people__list_voice_user_item_active {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -191,11 +191,11 @@
   border-radius: 50px;
 }
 
-.people__list-voice-user-item-active svg {
+.people__list_voice_user_item_active svg {
   fill: #000;
 }
 
-.people__list-voice-user-item-name {
+.people__list_voice_user_item_name {
   font-family: Nunito;
   font-style: normal;
   font-weight: normal;
@@ -205,11 +205,11 @@
   font-size: calc(25px + 10 * ((100vw - 320px) / 1600));
 }
 
-.people__block-users {
+.people__block_users {
   margin-top: 12px;
 }
 
-.people__block-users-title {
+.people__block_users_title {
   font-family: Nunito;
   font-style: normal;
   font-weight: bold;
@@ -219,7 +219,7 @@
   font-size: calc(20px + 10 * ((100vw - 320px) / 1600));
 }
 
-.people__block-users-list {
+.people__block_users_list {
   margin-top: 39px;
   display: flex;
   flex-wrap: wrap;
@@ -228,20 +228,20 @@
   justify-content: center;
 }
 
-.people__block-users-item {
+.people__block_users_item {
   display: flex;
   flex-direction: column;
   row-gap: 15px;
   align-items: center;
 }
 
-.people__block-users-photo {
+.people__block_users_photo {
   width: 105px;
   height: 105px;
   border-radius: 35px;
 }
 
-.people__block-users-name {
+.people__block_users_name {
   font-family: Nunito;
   font-style: normal;
   font-weight: normal;
@@ -252,13 +252,13 @@
 }
 
 @media (max-width: 877px) {
-  .people__list-info-room {
+  .people__list_info_room {
     justify-content: center;
   }
 }
 
 @media (max-width: 767px) {
-  .people__list-voice-user {
+  .people__list_voice_user {
     justify-content: center;
   }
 }
@@ -272,7 +272,7 @@
     -moz-column-gap: 20px;
     column-gap: 20px;
   }
-  .people__list-room-title {
+  .people__list_room_title {
     text-align: center;
   }
 }
