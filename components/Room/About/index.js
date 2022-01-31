@@ -10,11 +10,11 @@ export default function Room(params) {
           <Link href="/room">
             <a className={styles.header__blockLogo}>
               <picture>
-                <source srcSet="/img/index/main/logo.webp" type="image/webp" />
+                <source srcSet="/static/img/index/main/logo.webp" type="image/webp" />
                 <Image
                   width={100}
                   height={50}
-                  src="/img/index/main/logo.png"
+                  src="/static/img/index/main/logo.png"
                   alt="logo"
                   className={styles.header__logo}
                 />
@@ -31,13 +31,13 @@ export default function Room(params) {
               <a>
                 <picture>
                   <source
-                    srcSet="/img/index/main/avatar_placeholder.webp"
+                    srcSet="/static/img/index/main/avatar_placeholder.webp"
                     type="image/webp"
                   />
                   <Image
                     width={50}
                     height={50}
-                    src="/img/index/main/avatar_placeholder.png"
+                    src="/static/img/index/main/avatar_placeholder.png"
                     alt="avatar_placeholder"
                     className={styles.header__userAvatar}
                   />
@@ -83,7 +83,7 @@ export default function Room(params) {
                   <Image
                     width={120}
                     height={120}
-                    src="/img/index/main/avatar_placeholder.png"
+                    src="/static/img/index/main/avatar_placeholder.png"
                     alt="avatar_placeholder"
                     className={styles.about__user_info_main_photo}
                   />

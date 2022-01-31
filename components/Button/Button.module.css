@@ -1,0 +1,30 @@
+.main__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 11px;
+  column-gap: 11px;
+  width: 350px;
+  height: 70px;
+  background: #5b75a6;
+  border-radius: 50px;
+  margin-top: 96px;
+}
+
+.main__button:hover {
+  cursor: pointer;
+  background: #5b75a6e7;
+}
+
+.main__button:disabled {
+  cursor: default;
+  background: #5b75a6e7;
+}
+
+@media (max-width: 767px) {
+  .main__button {
+    max-width: 350px;
+    width: 100%;
+    margin-top: 3vmax;
+  }
+}

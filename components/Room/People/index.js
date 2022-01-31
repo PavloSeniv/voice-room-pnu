@@ -10,11 +10,11 @@ export default function Room(params) {
           <Link href="/room">
             <a className={styles.header__blockLogo}>
               <picture>
-                <source srcSet="/img/index/main/logo.webp" type="image/webp" />
+                <source srcSet="/static/img/index/main/logo.webp" type="image/webp" />
                 <Image
                   width={100}
                   height={50}
-                  src="/img/index/main/logo.png"
+                  src="/static/img/index/main/logo.png"
                   alt="logo"
                   className={styles.header__logo}
                 />
@@ -31,13 +31,13 @@ export default function Room(params) {
               <a>
                 <picture>
                   <source
-                    srcSet="/img/index/main/avatar_placeholder.webp"
+                    srcSet="/static/img/index/main/avatar_placeholder.webp"
                     type="image/webp"
                   />
                   <Image
                     width={50}
                     height={50}
-                    src="/img/index/main/avatar_placeholder.png"
+                    src="/static/img/index/main/avatar_placeholder.png"
                     alt="avatar_placeholder"
                     className={styles.header__userAvatar}
                   />
@@ -244,14 +244,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users.png"
+                        src="/static/img/index/main/avatar_placeholder_users.png"
                         alt="avatar_placeholder_users-1"
                       />
                     </picture>
@@ -265,14 +265,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_2.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_2.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_2.png"
+                        src="/static/img/index/main/avatar_placeholder_users_2.png"
                         alt="avatar_placeholder_users_2"
                       />
                     </picture>
@@ -286,14 +286,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_3.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_3.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_3.png"
+                        src="/static/img/index/main/avatar_placeholder_users_3.png"
                         alt="avatar_placeholder_users_3"
                       />
                     </picture>
@@ -307,14 +307,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_4.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_4.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_4.png"
+                        src="/static/img/index/main/avatar_placeholder_users_4.png"
                         alt="avatar_placeholder_users_4"
                       />
                     </picture>
@@ -328,14 +328,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_5.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_5.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_5.png"
+                        src="/static/img/index/main/avatar_placeholder_users_5.png"
                         alt="avatar_placeholder_users_5"
                       />
                     </picture>
@@ -349,14 +349,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_6.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_6.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_6.png"
+                        src="/static/img/index/main/avatar_placeholder_users_6.png"
                         alt="avatar_placeholder_users_6"
                       />
                     </picture>
@@ -370,14 +370,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_7.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_7.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_7.png"
+                        src="/static/img/index/main/avatar_placeholder_users_7.png"
                         alt="avatar_placeholder_users_7"
                       />
                     </picture>
@@ -391,14 +391,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_8.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_8.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_8.png"
+                        src="/static/img/index/main/avatar_placeholder_users_8.png"
                         alt="avatar_placeholder_users_8"
                       />
                     </picture>
@@ -498,14 +498,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users.png"
+                        src="/static/img/index/main/avatar_placeholder_users.png"
                         alt="avatar_placeholder_users-1"
                       />
                     </picture>
@@ -519,14 +519,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_2.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_2.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_2.png"
+                        src="/static/img/index/main/avatar_placeholder_users_2.png"
                         alt="avatar_placeholder_users_2"
                       />
                     </picture>
@@ -540,14 +540,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_3.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_3.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_3.png"
+                        src="/static/img/index/main/avatar_placeholder_users_3.png"
                         alt="avatar_placeholder_users_3"
                       />
                     </picture>
@@ -561,14 +561,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_4.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_4.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_4.png"
+                        src="/static/img/index/main/avatar_placeholder_users_4.png"
                         alt="avatar_placeholder_users_4"
                       />
                     </picture>
@@ -582,14 +582,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_5.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_5.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_5.png"
+                        src="/static/img/index/main/avatar_placeholder_users_5.png"
                         alt="avatar_placeholder_users_5"
                       />
                     </picture>
@@ -603,14 +603,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_6.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_6.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_6.png"
+                        src="/static/img/index/main/avatar_placeholder_users_6.png"
                         alt="avatar_placeholder_users_6"
                       />
                     </picture>
@@ -624,14 +624,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_7.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_7.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_7.png"
+                        src="/static/img/index/main/avatar_placeholder_users_7.png"
                         alt="avatar_placeholder_users_7"
                       />
                     </picture>
@@ -645,14 +645,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_8.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_8.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_8.png"
+                        src="/static/img/index/main/avatar_placeholder_users_8.png"
                         alt="avatar_placeholder_users_8"
                       />
                     </picture>
@@ -752,14 +752,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users.png"
+                        src="/static/img/index/main/avatar_placeholder_users.png"
                         alt="avatar_placeholder_users-1"
                       />
                     </picture>
@@ -773,14 +773,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_2.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_2.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_2.png"
+                        src="/static/img/index/main/avatar_placeholder_users_2.png"
                         alt="avatar_placeholder_users_2"
                       />
                     </picture>
@@ -794,14 +794,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_3.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_3.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_3.png"
+                        src="/static/img/index/main/avatar_placeholder_users_3.png"
                         alt="avatar_placeholder_users_3"
                       />
                     </picture>
@@ -815,14 +815,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_4.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_4.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_4.png"
+                        src="/static/img/index/main/avatar_placeholder_users_4.png"
                         alt="avatar_placeholder_users_4"
                       />
                     </picture>
@@ -836,14 +836,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_5.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_5.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_5.png"
+                        src="/static/img/index/main/avatar_placeholder_users_5.png"
                         alt="avatar_placeholder_users_5"
                       />
                     </picture>
@@ -857,14 +857,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_6.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_6.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_6.png"
+                        src="/static/img/index/main/avatar_placeholder_users_6.png"
                         alt="avatar_placeholder_users_6"
                       />
                     </picture>
@@ -878,14 +878,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_7.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_7.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_7.png"
+                        src="/static/img/index/main/avatar_placeholder_users_7.png"
                         alt="avatar_placeholder_users_7"
                       />
                     </picture>
@@ -899,14 +899,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_8.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_8.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_8.png"
+                        src="/static/img/index/main/avatar_placeholder_users_8.png"
                         alt="avatar_placeholder_users_8"
                       />
                     </picture>
@@ -1006,14 +1006,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users.png"
+                        src="/static/img/index/main/avatar_placeholder_users.png"
                         alt="avatar_placeholder_users-1"
                       />
                     </picture>
@@ -1027,14 +1027,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_2.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_2.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_2.png"
+                        src="/static/img/index/main/avatar_placeholder_users_2.png"
                         alt="avatar_placeholder_users_2"
                       />
                     </picture>
@@ -1048,14 +1048,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_3.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_3.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_3.png"
+                        src="/static/img/index/main/avatar_placeholder_users_3.png"
                         alt="avatar_placeholder_users_3"
                       />
                     </picture>
@@ -1069,14 +1069,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_4.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_4.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_4.png"
+                        src="/static/img/index/main/avatar_placeholder_users_4.png"
                         alt="avatar_placeholder_users_4"
                       />
                     </picture>
@@ -1090,14 +1090,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_5.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_5.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_5.png"
+                        src="/static/img/index/main/avatar_placeholder_users_5.png"
                         alt="avatar_placeholder_users_5"
                       />
                     </picture>
@@ -1111,14 +1111,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_6.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_6.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_6.png"
+                        src="/static/img/index/main/avatar_placeholder_users_6.png"
                         alt="avatar_placeholder_users_6"
                       />
                     </picture>
@@ -1132,14 +1132,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_7.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_7.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_7.png"
+                        src="/static/img/index/main/avatar_placeholder_users_7.png"
                         alt="avatar_placeholder_users_7"
                       />
                     </picture>
@@ -1153,14 +1153,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_8.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_8.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_8.png"
+                        src="/static/img/index/main/avatar_placeholder_users_8.png"
                         alt="avatar_placeholder_users_8"
                       />
                     </picture>
@@ -1260,14 +1260,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users.png"
+                        src="/static/img/index/main/avatar_placeholder_users.png"
                         alt="avatar_placeholder_users-1"
                       />
                     </picture>
@@ -1281,14 +1281,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_2.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_2.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_2.png"
+                        src="/static/img/index/main/avatar_placeholder_users_2.png"
                         alt="avatar_placeholder_users_2"
                       />
                     </picture>
@@ -1302,14 +1302,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_3.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_3.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_3.png"
+                        src="/static/img/index/main/avatar_placeholder_users_3.png"
                         alt="avatar_placeholder_users_3"
                       />
                     </picture>
@@ -1323,14 +1323,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_4.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_4.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_4.png"
+                        src="/static/img/index/main/avatar_placeholder_users_4.png"
                         alt="avatar_placeholder_users_4"
                       />
                     </picture>
@@ -1344,14 +1344,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_5.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_5.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_5.png"
+                        src="/static/img/index/main/avatar_placeholder_users_5.png"
                         alt="avatar_placeholder_users_5"
                       />
                     </picture>
@@ -1365,14 +1365,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_6.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_6.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_6.png"
+                        src="/static/img/index/main/avatar_placeholder_users_6.png"
                         alt="avatar_placeholder_users_6"
                       />
                     </picture>
@@ -1386,14 +1386,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_7.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_7.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_7.png"
+                        src="/static/img/index/main/avatar_placeholder_users_7.png"
                         alt="avatar_placeholder_users_7"
                       />
                     </picture>
@@ -1407,14 +1407,14 @@ export default function Room(params) {
                   <a className={styles.people__block_users_item}>
                     <picture>
                       <source
-                        srcSet="/img/index/main/avatar_placeholder_users_8.webp"
+                        srcSet="/static/img/index/main/avatar_placeholder_users_8.webp"
                         type="image/webp"
                       />
                       <Image
                         width={100}
                         height={100}
                         className={styles.people__block_users_photo}
-                        src="/img/index/main/avatar_placeholder_users_8.png"
+                        src="/static/img/index/main/avatar_placeholder_users_8.png"
                         alt="avatar_placeholder_users_8"
                       />
                     </picture>
