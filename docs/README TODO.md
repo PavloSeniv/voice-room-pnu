@@ -15,6 +15,9 @@ Todo for my in project
 - Папка pages потрібно вказувати index.js у папці компоненту
 - npm install node-sass
 - npm install --save clsx
+- гетспи для статичної генерації
+- import Component, {One, Two} from - деструктизація
+- Класові компоненти
 ## Sequlize для бд
 
 ## Other
@@ -28,3 +31,6 @@ Short list exemole
 ### \_app.j
 
 - Component: Головний компонент в який збираються решта компонентів
+
+## TODO
+- Переверстати все на компоненти
