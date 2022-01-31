@@ -139,11 +139,10 @@
   font-size: calc(14px + 16 * ((100vw - 320px) / 1600));
 }
 
-.main__inputTel {
-  max-width: 600px;
+.main__input {
+  max-width: 500px;
   width: 100%;
   height: 70px;
-  background: #ffffff;
   border: 3px solid #000000;
   border-radius: 25px;
   text-align: center;
@@ -155,6 +154,25 @@
   color: #000000;
   font-size: calc(20px + 22 * ((100vw - 320px) / 1600));
   margin-top: 45px;
+  display: flex;
+  padding: 5px 15px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  gap: 10px;
+}
+
+.main__telephone {
+  max-width: 400px;
+  width: 100%;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 42px;
+  line-height: 57px;
+  color: #000000;
+  font-size: calc(20px + 22 * ((100vw - 320px) / 1600));
 }
 
 .main__policy {
@@ -219,7 +237,7 @@
     line-height: 25px;
   }
 
-  .main__inputTel {
+  .main__input {
     line-height: 35px;
   }
 }

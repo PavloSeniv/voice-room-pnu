@@ -3,6 +3,7 @@ import Link from "next/link";
 import MainBlock from "../../MainBlock";
 import Button from "../../Button";
 import Image from "next/image";
+import NumberFormat from "react-number-format";
 
 export default function GoogleDone(params) {
   return (
@@ -12,12 +13,15 @@ export default function GoogleDone(params) {
         We well send you a confirmation code
       </h2>
       <form action="" method="get">
-        <input
-          className={styles.main__inputTel}
-          type="number"
-          maxLength="10"
-          placeholder="+ 38 (067) 277-76-71"
-        />
+        <div className={styles.main__input}>
+          <Image src="/static/svgicons/ukraine.png" height={20} width={21} />
+          <NumberFormat
+            className={styles.main__telephone}
+            format="+380 (##) ###-##-##"
+            mask="_"
+            allowEmptyFormatting
+          />
+        </div>
       </form>
 
       <Button>
