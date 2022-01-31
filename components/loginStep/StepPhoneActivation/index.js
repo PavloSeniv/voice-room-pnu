@@ -2,6 +2,8 @@ import styles from "./StepPhoneActivation.module.css";
 import Link from "next/link";
 import MainBlock from "../../MainBlock";
 import Button from "../../Button";
+import Image from "next/image";
+
 export default function GoogleDone(params) {
   return (
     <MainBlock>

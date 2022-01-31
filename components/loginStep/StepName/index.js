@@ -2,7 +2,8 @@ import styles from "./StepName.module.css";
 import Link from "next/link";
 import Button from "../../Button";
 import MainBlock from "../../MainBlock";
-<MainBlock></MainBlock>;
+import Image from "next/image";
+
 export default function Name(params) {
   return (
     <MainBlock>
