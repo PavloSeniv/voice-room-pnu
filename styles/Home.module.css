@@ -19,3 +19,13 @@
   max-width: 1920px;
   margin: 0 auto;
 }
+
+.loader {
+  position: absolute;
+  background: #fff;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

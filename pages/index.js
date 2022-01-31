@@ -2,8 +2,17 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Welcome from "../components/loginStep/StepWelcome";
 import { Oval } from "react-loader-spinner";
+import React, { useState, useEffect } from "react";
 
 export default function Login() {
+  const [style, setStyle] = useState({ display: "flex" });
+
+  useEffect(() => {
+    setTimeout(function () {
+      setStyle({ display: "none" });
+    }, 3000);
+  }, []);
+
   return (
     <div className={styles.bg__login}>
       <Head>
@@ -25,7 +34,17 @@ export default function Login() {
       </Head>
       <main className={styles.main + " " + styles.main__container}>
         <Welcome></Welcome>
-        {/* <Oval  color="#00BFFF" height={80} width={80} /> */}
+        <div style={style} className={styles.loader}>
+          <Oval
+            ariaLabel="Loading..."
+            height={100}
+            width={100}
+            strokeWidth={5}
+            strokeWidthSecondary={2}
+            color="#5b75a6"
+            secondaryColor="white"
+          />
+        </div>
       </main>
     </div>
   );
