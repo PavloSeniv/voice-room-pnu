@@ -24,7 +24,7 @@ export default function Room() {
         <meta name="copyright" content="Seniv Pavlo" />
       </Head>
       <Rooms></Rooms>
-      <Script src="../public/js/app.min.js" />
+      <Script src="/static/js/app.min.js" />
     </div>
   );
 }

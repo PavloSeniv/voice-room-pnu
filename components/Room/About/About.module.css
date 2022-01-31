@@ -185,7 +185,7 @@
 
 .about__user_subscripe {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .about__user_subscripe_info {

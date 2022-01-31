@@ -67,7 +67,7 @@ export default function Room(params) {
                   width="25"
                   height="25"
                   fill="#000"
-                  viewbox="0 0 16 16"
+                  viewBox="0 0 16 16"
                 >
                   <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z" />
                   <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z" />
@@ -85,7 +85,7 @@ export default function Room(params) {
             <svg
               width="27"
               height="26"
-              viewbox="0 0 27 26"
+              viewBox="0 0 27 26"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -183,7 +183,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -198,7 +198,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -213,7 +213,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -228,7 +228,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -247,7 +247,7 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        viewbox="0 0 16 16"
+                        viewBox="0 0 16 16"
                       >
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                       </svg>
@@ -346,7 +346,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -361,7 +361,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -376,7 +376,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -391,7 +391,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -410,7 +410,7 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        viewbox="0 0 16 16"
+                        viewBox="0 0 16 16"
                       >
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                       </svg>
@@ -509,7 +509,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -524,7 +524,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -539,7 +539,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -554,7 +554,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -573,7 +573,7 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        viewbox="0 0 16 16"
+                        viewBox="0 0 16 16"
                       >
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                       </svg>
@@ -670,7 +670,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -685,7 +685,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -700,7 +700,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -715,7 +715,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -734,7 +734,7 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        viewbox="0 0 16 16"
+                        viewBox="0 0 16 16"
                       >
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                       </svg>
@@ -831,7 +831,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -846,7 +846,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -861,7 +861,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -876,7 +876,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -895,7 +895,7 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        viewbox="0 0 16 16"
+                        viewBox="0 0 16 16"
                       >
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                       </svg>
@@ -994,7 +994,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -1009,7 +1009,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -1024,7 +1024,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -1039,7 +1039,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -1058,7 +1058,7 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        viewbox="0 0 16 16"
+                        viewBox="0 0 16 16"
                       >
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                       </svg>
@@ -1157,7 +1157,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -1172,7 +1172,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -1187,7 +1187,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -1202,7 +1202,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -1221,7 +1221,7 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        viewbox="0 0 16 16"
+                        viewBox="0 0 16 16"
                       >
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                       </svg>
@@ -1320,7 +1320,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -1335,7 +1335,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -1350,7 +1350,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -1365,7 +1365,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -1384,7 +1384,7 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        viewbox="0 0 16 16"
+                        viewBox="0 0 16 16"
                       >
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                       </svg>
@@ -1481,7 +1481,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -1496,7 +1496,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -1511,7 +1511,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -1526,7 +1526,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -1545,7 +1545,7 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        viewbox="0 0 16 16"
+                        viewBox="0 0 16 16"
                       >
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                       </svg>
@@ -1642,7 +1642,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -1657,7 +1657,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -1672,7 +1672,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -1687,7 +1687,7 @@ export default function Room(params) {
                           width="16"
                           height="16"
                           fill="currentColor"
-                          viewbox="0 0 16 16"
+                          viewBox="0 0 16 16"
                         >
                           <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z" />
                           <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z" />
@@ -1706,7 +1706,7 @@ export default function Room(params) {
                         width="16"
                         height="16"
                         fill="currentColor"
-                        viewbox="0 0 16 16"
+                        viewBox="0 0 16 16"
                       >
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                       </svg>
@@ -1740,7 +1740,7 @@ export default function Room(params) {
           <svg
             width="30"
             height="30"
-            viewbox="0 0 30 30"
+            viewBox="0 0 30 30"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -1893,7 +1893,7 @@ export default function Room(params) {
                 <svg
                   width="27"
                   height="26"
-                  viewbox="0 0 27 26"
+                  viewBox="0 0 27 26"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >

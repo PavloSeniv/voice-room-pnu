@@ -22,7 +22,7 @@ export default function GoogleDone(params) {
               width={200}
               height={200}
               className={styles.main__photoImg}
-              src="img/index/main/avatar_placeholder.png"
+              src="/img/index/main/avatar_placeholder.png"
               alt="avatar_placeholder"
             />
           </picture>
@@ -47,7 +47,7 @@ export default function GoogleDone(params) {
           <svg
             width="20"
             height="21"
-            viewbox="0 0 20 21"
+            viewBox="0 0 20 21"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >

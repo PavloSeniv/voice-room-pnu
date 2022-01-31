@@ -8,7 +8,7 @@ export default function Activation(params) {
         width={50}
         height={50}
         className={styles.main__loader}
-        src="img/index/main/loader.gif"
+        src="/img/index/main/loader.gif"
         alt="loader"
       />
     </section>

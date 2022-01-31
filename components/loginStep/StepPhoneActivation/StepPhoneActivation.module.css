@@ -157,6 +157,13 @@
   margin-top: 45px;
 }
 
+.main form {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 .main__inputNumber {
   display: flex;
   gap: 68px;
@@ -247,7 +254,7 @@
     line-height: 35px;
   }
 
-  .main__inpuNumber {
+  .main__inputNumber {
     margin-top: 3vmax;
     gap: 50px;
   }

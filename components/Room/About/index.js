@@ -57,7 +57,7 @@ export default function Room(params) {
                 width="30"
                 height="30"
                 fill="#000"
-                viewbox="0 0 16 16"
+                viewBox="0 0 16 16"
               >
                 <path
                   fillRule="evenodd"
@@ -95,7 +95,6 @@ export default function Room(params) {
                 </div>
 
                 <button
-                  onClick=""
                   type="submit"
                   className={styles.about__user_button_follow}
                 >
@@ -107,7 +106,7 @@ export default function Room(params) {
                     <svg
                       width="78"
                       height="65"
-                      viewbox="0 0 78 65"
+                      viewBox="0 0 78 65"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
