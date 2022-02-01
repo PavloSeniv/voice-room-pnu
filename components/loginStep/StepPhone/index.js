@@ -14,7 +14,7 @@ export default function GoogleDone(params) {
       </h2>
       <form action="" method="get">
         <div className={styles.main__input}>
-          <Image src="/static/svgicons/ukraine.png" height={20} width={21} />
+          <Image src="/static/svgicons/ukraine.png" height={25} width={25} />
           <NumberFormat
             className={styles.main__telephone}
             format="+380 (##) ###-##-##"
@@ -24,7 +24,7 @@ export default function GoogleDone(params) {
         </div>
       </form>
 
-      <Button>
+      <Button className={styles.main__button}>
         <h3 className={styles.main__buttonTitle}>Next</h3>
         <Image src="/static/svgicons/arrow-right.svg" height={20} width={21} />
       </Button>
