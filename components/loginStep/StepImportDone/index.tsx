@@ -73,4 +73,4 @@ export const SelectPhoto: React.FC = (params) => {
   );
 };
 
-export default GoogleDone;
+export default SelectPhoto;
