@@ -20,7 +20,7 @@ const stepsCpmponents = {
 };
 
 export default function Login() {
-  const [step, setStep] = React.useState<number>(4);
+  const [step, setStep] = React.useState<number>(5);
   const Step = stepsCpmponents[step];
 
   return (
