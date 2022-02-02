@@ -22,8 +22,8 @@ export default function UserAvatar({
         height={height}
         className={clsx(styles.main__photoImg, className)}
         // src={` url(${src})`}
-        src={src }
-        alt={"'" + alt + "'"}
+        src={"/" + src + ""}
+        alt={"" + alt + ""}
       />
     </picture>
   );
