@@ -51,3 +51,4 @@
 - props
 - interface
 - ts type
+- arrow func
