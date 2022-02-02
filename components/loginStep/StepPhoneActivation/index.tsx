@@ -5,6 +5,7 @@ import Button from "../../Button";
 import Image from "next/image";
 import React from "react";
 import clsx from "clsx";
+import Axios from "../../../core/axios";
 
 export const ConfirmTel = (params) => {
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
@@ -26,8 +27,15 @@ export const ConfirmTel = (params) => {
 
   console.log(codes);
 
-  const onSubmit = () => {
-    setIsLoading(true);
+  const onSubmit = async () => {
+    try {
+      setIsLoading(true);
+      await Axios.get("/todos");
+    } catch (error) {
+      alert("Помилка при активації");
+    }
+
+    setIsLoading(false);
   };
 
   return (
