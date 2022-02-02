@@ -32,7 +32,7 @@
 ## Lesson
 
 - Lesson 1 - 2.31 Done
-- Lesson 2 -
+- Lesson 2 - 1:33:13 
 - Lesson 3 -
 - Lesson 4 -
 - Lesson 5 -
