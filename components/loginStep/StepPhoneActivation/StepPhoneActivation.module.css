@@ -37,7 +37,7 @@
   margin-top: 45px;
 }
 
-.main form {
+ .form {
   display: flex;
   width: 100%;
   align-items: center;
@@ -120,7 +120,7 @@
   height: 70px;
   background: #5b75a6;
   border-radius: 50px;
-  margin-top: 96px;
+  margin-top: 90px!important;
   width: 250px;
 }
 
@@ -171,8 +171,8 @@
 }
 
 .main__inputItem {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   background: #ffffff;
   border: 3px solid #000000;
   box-sizing: border-box;

@@ -48,3 +48,6 @@
 ## Stydy
 
 - useRef
+- props
+- interface
+- ts type
