@@ -4,7 +4,7 @@ import Welcome from "../components/loginStep/StepWelcome";
 import Phone from "../components/loginStep/StepPhone";
 import PhoneActivation from "../components/loginStep/StepPhoneActivation";
 import Name from "../components/loginStep/StepName";
-import Activation from "../components/loginStep/StepActivation";
+
 import DoneGoogle from "../components/loginStep/StepImportDone";
 import ImportGoogle from "../components/loginStep/StepImportGoogle";
 import React from "react";
@@ -16,7 +16,6 @@ const stepsCpmponents = {
   3: DoneGoogle,
   4: Phone,
   5: PhoneActivation,
-  6: Activation,
 };
 
 export default function Login() {

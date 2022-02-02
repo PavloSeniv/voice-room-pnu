@@ -7,8 +7,8 @@ import React from "react";
 import UserAvatar from "../../UserAvatar";
 
 export const SelectPhoto: React.FC = (params) => {
-  const inputFileRef = React.useRef<HTMLInputElement>(null);
-  const labelFileRef = React.useRef<HTMLLabelElement>(null); //Витягаю інпут
+  const inputFileRef = React.useRef<HTMLInputElement>(null); //Витягаю інпут
+
   const [avatarUrl, setAvatarUrl] = React.useState<string>(
     "/static/img/index/main/avatar_placeholder.png"
   );
@@ -26,8 +26,6 @@ export const SelectPhoto: React.FC = (params) => {
   React.useEffect(() => {
     if (inputFileRef.current) {
       inputFileRef.current.addEventListener("change", handleChangeImage); // Прикріпляю обробник подій
-    } else if (labelFileRef.current) {
-      labelFileRef.current.addEventListener("change", handleChangeImage); // Прикріпляю обробник подій
     }
   }, []);
 
@@ -40,7 +38,6 @@ export const SelectPhoto: React.FC = (params) => {
         <label
           className={styles.main__photoInputCastomImg}
           htmlFor="main__photo-input"
-          ref={labelFileRef}
         >
           <UserAvatar
             width={200}
