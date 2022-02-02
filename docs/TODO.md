@@ -1,6 +1,6 @@
 # TODO
 
-Todo for my in project
+- [ ] (Переверстати все на компоненти)
 
 ## Next.js
 
@@ -19,21 +19,32 @@ Todo for my in project
 - import Component, {One, Two} from - деструктизація
 - Класові компоненти
 - npm install --save-dev @types/react @types/node typescript
-## Sequlize для бд
+- Sequlize для бд
+- For TS create touch tsconfig.json
+- vb audio virtual cable
 
-## Other
-For TS craete touch tsconfig.json
-vb audio virtual cable
+## Pages
 
-## Code
-
-Short list exemole
-
-### \_app.j
+### \_app.
 
 - Component: Головний компонент в який збираються решта компонентів
 
-## TODO
-- Переверстати все на компоненти
+## Lesson
 
-- 2.31
+- Lesson 1 - 2.31 Done
+- Lesson 2 -
+- Lesson 3 -
+- Lesson 4 -
+- Lesson 5 -
+- Lesson 6 -
+- Lesson 7 -
+- Lesson 8
+- Lesson 9
+- Lesson 10 -
+- Lesson 11 -
+- Lesson 12 -
+- Lesson 13 -
+
+## Stydy
+
+- useRef
