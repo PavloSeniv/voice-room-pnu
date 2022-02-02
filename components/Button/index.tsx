@@ -5,9 +5,9 @@ import styles from "./Button.module.css";
 
 interface ButtonProps {
   children: any;
-  disabled?: any;
-  color?: string;
-  onClick?: any;
+  disabled?: boolean;
+  color?: "blue" | "grey";
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
   className?: string;
   type?: any;
 }
@@ -28,7 +28,7 @@ export const Button: React.FC<ButtonProps> = ({
     <button
       onClick={onClick}
       className={clsx(className, styles.main__button, colors[color])}
-      disabled={disabled}
+      disabled={true}
       type={type}
     >
       {children}

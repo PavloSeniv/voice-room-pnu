@@ -7,10 +7,21 @@ import React from "react";
 import UserAvatar from "../../UserAvatar";
 
 export const GoogleDone: React.FC = (params) => {
-  const inputFileRef = React.useRef<HTMLInputElement>(null); //Витягаю інпут
+  const inputFileRef =
+    React.useRef<HTMLInputElement>(null) &&
+    React.useRef<HTMLLabelElement>(null); //Витягаю інпут
+  const [avatarUrl, setAvatarUrl] = React.useState<string>(
+    "/static/img/index/main/avatar_placeholder.png"
+  );
 
-  const handleChangeImage = (e) => {
-    console.log(e.target.files); // Виводжу в консоль завантажену фотку
+  const handleChangeImage = (e: Event): void => {
+    // console.log(e.target.files); // Виводжу в консоль завантажену фотку
+    const file = (e.target as HTMLInputElement).files[0];
+    if (file) {
+      const imageUrl = URL.createObjectURL(file); //blob
+      setAvatarUrl(imageUrl);
+      console.log(imageUrl);
+    }
   };
 
   React.useEffect(() => {
@@ -34,7 +45,7 @@ export const GoogleDone: React.FC = (params) => {
             width={200}
             height={200}
             className={styles.main__photoImg}
-            src="/static/img/index/main/avatar_placeholder.png"
+            src={avatarUrl}
             alt="avatar_placeholder"
           />
         </label>
