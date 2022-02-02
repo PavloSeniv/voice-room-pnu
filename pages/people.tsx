@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Home.module.css";
 import People from "../components/Room/People";
-export default function Room() {
+export default function RoomPage() {
   return (
     <div className={styles.bg__white}>
       <Head>

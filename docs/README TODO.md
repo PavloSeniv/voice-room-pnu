@@ -18,10 +18,11 @@ Todo for my in project
 - гетспи для статичної генерації
 - import Component, {One, Two} from - деструктизація
 - Класові компоненти
+- npm install --save-dev @types/react @types/node typescript
 ## Sequlize для бд
 
 ## Other
-
+For TS craete touch tsconfig.json
 vb audio virtual cable
 
 ## Code

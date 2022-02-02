@@ -5,9 +5,11 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Oval } from "react-loader-spinner";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 export default function Welcome() {
   const [style, setStyle] = useState({ display: "flex" });
+  const router = useRouter();
 
   useEffect(() => {
     setTimeout(function () {
@@ -23,7 +25,7 @@ export default function Welcome() {
           Discover millions of rooms, filled with fascinating and unexpected
           conversations. 😄
         </h2>
-        <Button>
+        <Button type="button" onClick={() => router.push("/name")}>
           <h3 className={styles.main__buttonTitle}>Get yor username</h3>
           <Image
             src="/static/svgicons/arrow-right.svg"
