@@ -6,8 +6,8 @@ import MainBlock from "../../MainBlock";
 import React from "react";
 import UserAvatar from "../../UserAvatar";
 
-export default function GoogleDone(params) {
-  const inputFileRef = React.useRef(); //Витягаю інпут
+export const GoogleDone: React.FC = (params) => {
+  const inputFileRef = React.useRef<HTMLInputElement>(null); //Витягаю інпут
 
   const handleChangeImage = (e) => {
     console.log(e.target.files); // Виводжу в консоль завантажену фотку
@@ -34,7 +34,7 @@ export default function GoogleDone(params) {
             width={200}
             height={200}
             className={styles.main__photoImg}
-            src="static/img/index/main/avatar_placeholder.png"
+            src="/static/img/index/main/avatar_placeholder.png"
             alt="avatar_placeholder"
           />
         </label>
@@ -59,4 +59,6 @@ export default function GoogleDone(params) {
       </Button>
     </MainBlock>
   );
-}
+};
+
+export default GoogleDone;

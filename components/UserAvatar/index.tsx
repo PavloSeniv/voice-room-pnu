@@ -3,14 +3,23 @@ import React from "react";
 import Image from "next/image";
 import styles from "./UserAvatar.module.css";
 
-export default function UserAvatar({
+interface AvatarProps {
+  className?: string;
+  height: number;
+  width: number;
+  src: string;
+  isVoise?: boolean;
+  alt: string;
+}
+
+export const UserAvatar: React.FC<AvatarProps> = ({
   className,
   height,
   width,
   src,
   isVoise,
   alt,
-}) {
+}) => {
   return (
     <picture>
       <source
@@ -22,9 +31,11 @@ export default function UserAvatar({
         height={height}
         className={clsx(styles.main__photoImg, className)}
         // src={` url(${src})`}
-        src={"/" + src + ""}
-        alt={"" + alt + ""}
+        src={src}
+        alt={alt}
       />
     </picture>
   );
-}
+};
+
+export default UserAvatar;

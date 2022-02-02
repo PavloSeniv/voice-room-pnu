@@ -3,13 +3,23 @@ import React from "react";
 
 import styles from "./Button.module.css";
 
-export default function Button({
+interface ButtonProps {
+  children: any;
+  disabled?: any;
+  color?: string;
+  onClick?: any;
+  className?: string;
+  type?: any;
+}
+
+export const Button: React.FC<ButtonProps> = ({
   children,
   disabled,
   color,
   onClick,
   className,
-}) {
+  type,
+}) => {
   const colors = {
     grean: styles.buttonGrean,
     gray: styles.buttonGray,
@@ -17,11 +27,13 @@ export default function Button({
   return (
     <button
       onClick={onClick}
-      type="button"
       className={clsx(className, styles.main__button, colors[color])}
       disabled={disabled}
+      type={type}
     >
       {children}
     </button>
   );
-}
+};
+
+export default Button;
