@@ -4,6 +4,7 @@ import MainBlock from "../../MainBlock";
 import Button from "../../Button";
 import Image from "next/image";
 import React from "react";
+import clsx from "clsx";
 
 export const ConfirmTel = (params) => {
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
@@ -25,6 +26,10 @@ export const ConfirmTel = (params) => {
 
   console.log(codes);
 
+  const onSubmit = () => {
+    setIsLoading(true);
+  };
+
   return (
     <React.Fragment>
       {!isLoading ? (
@@ -32,7 +37,7 @@ export const ConfirmTel = (params) => {
           <h1 className={styles.main__title}>Enter your activate code!</h1>
           <form
             action=""
-            method="post"
+            method="get"
             className={styles.main__inputNumber + " " + styles.form}
           >
             <input
@@ -73,7 +78,11 @@ export const ConfirmTel = (params) => {
             />
           </form>
 
-          <Button className={styles.main__button} disabled={nextDisabled}>
+          <Button
+            className={styles.main__button}
+            disabled={nextDisabled}
+            onClick={onSubmit}
+          >
             <h3 className={styles.main__buttonTitle}>Activate</h3>
             <Image
               src="/static/svgicons/arrow-right.svg"

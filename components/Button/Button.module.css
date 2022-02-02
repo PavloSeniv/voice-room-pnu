@@ -6,19 +6,27 @@
   column-gap: 11px;
   width: 350px;
   height: 70px;
-  background: #5b75a6;
   border-radius: 50px;
   margin-top: 96px;
+    background-color: #5b75a6;
+
 }
 
 .main__button:hover {
   cursor: pointer;
-  background: #5b75a6e7;
 }
 
 .main__button:disabled {
+  background-color: #181a1b;
   cursor: default;
-  background: #5b75a6e7;
+}
+
+.blue {
+  background-color: #5b75a6;
+}
+
+.green {
+  background-color: #115c39;
 }
 
 @media (max-width: 767px) {

@@ -6,10 +6,10 @@ import styles from "./Button.module.css";
 interface ButtonProps {
   children: any;
   disabled?: boolean;
-  color?: "blue" | "grey";
+  color?: "blue" | "green";
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
   className?: string;
-  type?: any;
+  type?: string;
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -21,15 +21,15 @@ export const Button: React.FC<ButtonProps> = ({
   type,
 }) => {
   const colors = {
-    grean: styles.buttonGrean,
-    gray: styles.buttonGray,
+    blue: styles.blue,
+    green: styles.green,
   };
   return (
     <button
       onClick={onClick}
       className={clsx(className, styles.main__button, colors[color])}
-      disabled={true}
-      type={type}
+      disabled={disabled}
+      type="button"
     >
       {children}
     </button>

@@ -112,21 +112,8 @@
 }
 
 .main__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  -moz-column-gap: 11px;
-  column-gap: 11px;
-  height: 70px;
-  background: #5b75a6;
-  border-radius: 50px;
   margin-top: 90px !important;
   width: 250px;
-}
-
-.main__button:hover {
-  cursor: pointer;
-  background: #5b75a6e7;
 }
 
 .main__buttonTitle {
