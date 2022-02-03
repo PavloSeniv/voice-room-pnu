@@ -5,8 +5,10 @@ import styles from "./StepImportDone.module.css";
 import MainBlock from "../../MainBlock";
 import React from "react";
 import UserAvatar from "../../UserAvatar";
+import { MainContext } from "../../../pages";
 
 export const SelectPhoto: React.FC = (params) => {
+  const { onNextStep } = React.useContext(MainContext);
   const inputFileRef = React.useRef<HTMLInputElement>(null); //Витягаю інпут
 
   const [avatarUrl, setAvatarUrl] = React.useState<string>(
@@ -28,6 +30,10 @@ export const SelectPhoto: React.FC = (params) => {
       inputFileRef.current.addEventListener("change", handleChangeImage); // Прикріпляю обробник подій
     }
   }, []);
+
+  const onClickNextStep = () => {
+    onNextStep();
+  };
 
   return (
     <MainBlock>
@@ -62,7 +68,7 @@ export const SelectPhoto: React.FC = (params) => {
         </label>
       </form>
 
-      <Button className={styles.main__button}>
+      <Button onClick={onClickNextStep} className={styles.main__button}>
         <h3 className={styles.main__buttonTitle}>Next</h3>
         <Image src="/static/svgicons/arrow-right.svg" height={20} width={21} />
       </Button>
