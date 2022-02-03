@@ -3,8 +3,16 @@ import Link from "next/link";
 import MainBlock from "../../MainBlock";
 import Button from "../../Button";
 import Image from "next/image";
+import React from "react";
+import { MainContext } from "../../../pages";
 
-export default function Google(params) {
+export const GetGoogle: React.FC = (params) => {
+  const { onNextStep } = React.useContext(MainContext);
+
+  const onClickNextStep = () => {
+    onNextStep();
+  };
+
   return (
     <MainBlock>
       <h1 className={styles.main__title}>Do yo wont import from Google?</h1>
@@ -13,7 +21,7 @@ export default function Google(params) {
         <h3 className={styles.main__photoName}>Pavlo Seniv</h3>
       </div>
 
-      <Button>
+      <Button onClick={onClickNextStep} className={styles.main__button}>
         <h3 className={styles.main__buttonTitle}>Import from Google</h3>
         <Image src="/static/svgicons/arrow-right.svg" height={20} width={21} />
       </Button>
@@ -23,4 +31,6 @@ export default function Google(params) {
       </Link>
     </MainBlock>
   );
-}
+};
+
+export default GetGoogle;
