@@ -73,7 +73,7 @@
   height: 70px;
   background: #5b75a6;
   border-radius: 50px;
-  margin-top: 70px;
+  margin-top: 70px!important;
 }
 
 .main__button:hover {
