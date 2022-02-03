@@ -7,7 +7,7 @@ export default function Room(params) {
     <>
       <header className={styles.header}>
         <div className={styles.header__container}>
-          <Link href="/room">
+          <Link href="/rooms">
             <a className={styles.header__blockLogo}>
               <picture>
                 <source srcSet="/static/img/index/main/logo.webp" type="image/webp" />
@@ -50,7 +50,7 @@ export default function Room(params) {
 
       <main className={styles.about + " " + styles.about__container}>
         <div className={styles.about__info}>
-          <Link href="/people">
+          <Link href="/room">
             <a className={styles.about__info_title}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
