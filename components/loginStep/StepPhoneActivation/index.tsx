@@ -6,8 +6,9 @@ import Image from "next/image";
 import React from "react";
 import clsx from "clsx";
 import Axios from "../../../core/axios";
-
+import { useRouter } from "next/router";
 export const ConfirmTel = (params) => {
+  const router = useRouter( );
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
   const [codes, setCodes] = React.useState(["", "", "", ""]);
   const nextDisabled = codes.some((v) => !v); //|| codes.length < 4
@@ -31,6 +32,7 @@ export const ConfirmTel = (params) => {
     try {
       setIsLoading(true);
       await Axios.get("/todos");
+      router.push("/rooms")
     } catch (error) {
       alert("Помилка при активації");
     }

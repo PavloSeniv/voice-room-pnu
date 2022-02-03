@@ -6,10 +6,13 @@ import Link from "next/link";
 import { Oval } from "react-loader-spinner";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { MainContext } from "../../../pages";
 
-export const Welcome = () => {
+export const Welcome: React.FC = () => {
+  const {onNextStep} = React.useContext(MainContext)
+
   const [style, setStyle] = useState({ display: "flex" });
-  const router = useRouter();
+  // const router = useRouter();
 
   useEffect(() => {
     setTimeout(function () {
@@ -25,7 +28,8 @@ export const Welcome = () => {
           Discover millions of rooms, filled with fascinating and unexpected
           conversations. 😄
         </h2>
-        <Button type="button" onClick={() => router.push("/name")}>
+        {/* <Button type="button" onClick={() => router.push("/name")}> */}
+        <Button onClick= {onNextStep}>
           <h3 className={styles.main__buttonTitle}>Get yor username</h3>
           <Image
             src="/static/svgicons/arrow-right.svg"

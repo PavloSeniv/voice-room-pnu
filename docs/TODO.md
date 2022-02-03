@@ -22,6 +22,7 @@
 - Sequlize для бд
 - For TS create touch tsconfig.json
 - vb audio virtual cable
+- Якщо є async func то краще обертати  в try catch
 
 ## Pages
 
