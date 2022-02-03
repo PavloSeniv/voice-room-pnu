@@ -5,13 +5,16 @@ import Button from "../../Button";
 import Image from "next/image";
 import NumberFormat from "react-number-format";
 import React from "react";
+import { MainContext } from "../../../pages";
 
 type InputValueState = {
   formattedValue: string;
   value: string;
 };
 
-export const InputTel = (params) => {
+export const InputTel: React.FC = (params) => {
+  const { onNextStep } = React.useContext(MainContext);
+
   const [values, setValues] = React.useState<InputValueState>(
     {} as InputValueState
   ); // Витягаю інпук з даними
@@ -20,6 +23,9 @@ export const InputTel = (params) => {
   const nextDisabled =
     !values.formattedValue || values.formattedValue.includes("_");
 
+  const onClickNextStep = () => {
+    onNextStep();
+  };
   return (
     <MainBlock>
       <h1 className={styles.main__title}>Enter your phone!</h1>
@@ -42,7 +48,11 @@ export const InputTel = (params) => {
         </div>
       </form>
 
-      <Button className={styles.main__button} disabled={nextDisabled}>
+      <Button
+        onClick={onClickNextStep}
+        className={styles.main__button}
+        disabled={nextDisabled}
+      >
         <h3 className={styles.main__buttonTitle}>Next</h3>
         <Image src="/static/svgicons/arrow-right.svg" height={20} width={21} />
       </Button>
