@@ -53,3 +53,7 @@
 - interface
 - ts type
 - arrow func
+  
+## TODO PROJECT
+- Зміна голосу 
+- Караоке кімната
