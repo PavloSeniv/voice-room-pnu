@@ -8,8 +8,7 @@
   height: 70px;
   border-radius: 50px;
   margin-top: 96px;
-    background-color: #5b75a6;
-
+  background-color: #5b75a6;
 }
 
 .main__button:hover {
@@ -22,11 +21,16 @@
 }
 
 .blue {
-  background-color: #5b75a6;
+  background-color: #5b75a6 !important;
 }
 
 .green {
-  background-color: #115c39;
+  background-color: #115c39 !important;
+}
+
+.green:disabled {
+  background-color: #181a1b !important;
+  cursor: default !important;
 }
 
 @media (max-width: 767px) {
