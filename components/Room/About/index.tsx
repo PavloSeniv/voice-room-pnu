@@ -2,7 +2,20 @@ import styles from "./About.module.css";
 
 import Link from "next/link";
 import Image from "next/image";
-export default function Room(params) {
+
+interface ProfileProps {
+  fullname: string;
+  username: string;
+  avatarUrl: string;
+  about: string;
+}
+
+export const ProfilePage: React.FC<ProfileProps> = ({
+  fullname,
+  username,
+  avatarUrl,
+  about,
+}) => {
   return (
     <>
       <header className={styles.header}>
@@ -10,7 +23,10 @@ export default function Room(params) {
           <Link href="/rooms">
             <a className={styles.header__blockLogo}>
               <picture>
-                <source srcSet="/static/img/index/main/logo.webp" type="image/webp" />
+                <source
+                  srcSet="/static/img/index/main/logo.webp"
+                  type="image/webp"
+                />
                 <Image
                   width={100}
                   height={50}
@@ -83,15 +99,15 @@ export default function Room(params) {
                   <Image
                     width={120}
                     height={120}
-                    src="/static/img/index/main/avatar_placeholder.png"
+                    src={avatarUrl}
                     alt="avatar_placeholder"
                     className={styles.about__user_info_main_photo}
                   />
                 </picture>
 
                 <div className={styles.about__user_info_username}>
-                  <h2 className={styles.about__username}>Seniv Pavlo</h2>
-                  <h3 className={styles.about__logname}>@SenivPavlo</h3>
+                  <h2 className={styles.about__username}>{fullname}</h2>
+                  <h3 className={styles.about__logname}>@{username}</h3>
                 </div>
 
                 <button
@@ -122,21 +138,9 @@ export default function Room(params) {
               </div>
 
               <div className={styles.about__user_bio}>
-                <p className={styles.about__user_bio_info}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
-                  dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor
-                  sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit
-                  amet, consectetur adipiscing elit.
-                </p>
+                <p className={styles.about__user_bio_info}>{about}</p>
 
-                <p className={styles.about__user_bio_info}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem
-                  ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum
-                  dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor
-                  sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit
-                  amet, consectetur adipiscing elit.
-                </p>
+                <p className={styles.about__user_bio_info}>{about}</p>
               </div>
             </div>
 
@@ -161,4 +165,6 @@ export default function Room(params) {
       </section>
     </>
   );
-}
+};
+
+export default ProfilePage;
