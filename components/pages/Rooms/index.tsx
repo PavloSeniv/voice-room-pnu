@@ -1,9 +1,11 @@
 import styles from "./Rooms.module.css";
+
 import Link from "next/link";
 import Image from "next/image";
 import React, {useState} from "react";
-import {MainContext} from "../../../pages";
+
 import PopUp from "../../construction/PopUp";
+import Header from "../../construction/Header";
 
 type PopUpProps = {
     open: boolean;
@@ -25,48 +27,7 @@ export default function Room(params) {
 
     return (
         <>
-            <header className={styles.header}>
-                <div className={styles.header__container}>
-                    <Link href="/room">
-                        <a className={styles.header__blockLogo}>
-                            <picture>
-                                <source srcSet="/static/img/index/main/logo.webp" type="image/webp"/>
-                                <Image
-                                    width={100}
-                                    height={50}
-                                    src="/static/img/index/main/logo.png"
-                                    alt="logo"
-                                    className={styles.header__logo}
-                                />
-                            </picture>
-                        </a>
-                    </Link>
-
-                    <div className={styles.header__user}>
-                        <Link href="/about">
-                            <a className={styles.header__userName}>Seniv Pavlo</a>
-                        </Link>
-
-                        <Link href="/about">
-                            <a>
-                                <picture>
-                                    <source
-                                        srcSet="/static/img/index/main/avatar_placeholder.webp"
-                                        type="image/webp"
-                                    />
-                                    <Image
-                                        width={50}
-                                        height={50}
-                                        src="/static/img/index/main/avatar_placeholder.png"
-                                        alt="avatar_placeholder"
-                                        className={styles.header__userAvatar}
-                                    />
-                                </picture>
-                            </a>
-                        </Link>
-                    </div>
-                </div>
-            </header>
+            <Header/>
 
             <PopUpContext.Provider value={{open, closeModal}}>
                 <main className={styles.rooms + " " + styles.rooms__container}>
@@ -1822,7 +1783,7 @@ export default function Room(params) {
                     </div>
                 </section>
 
-                <PopUp />
+                <PopUp/>
             </PopUpContext.Provider>
         </>
 
