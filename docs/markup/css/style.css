@@ -822,7 +822,7 @@ h6 {
 
 /*-------- Rooms End -------*/
 
-/*-------- People Start -------*/
+/*-------- Room Start -------*/
 
 .people {
   margin-top: 70px;
@@ -1041,9 +1041,9 @@ h6 {
   font-size: calc(20px + 15 * ((100vw - 320px) / 1600));
 }
 
-/*-------- People End -------*/
+/*-------- Room End -------*/
 
-/*-------- About Start -------*/
+/*-------- Profile Start -------*/
 
 .about {
   margin-top: 70px;
@@ -1266,7 +1266,7 @@ h6 {
   font-size: calc(21px + 9 * ((100vw - 320px) / 1600));
 }
 
-/*-------- About End -------*/
+/*-------- Profile End -------*/
 
 /*-------- Developer Block Start -------*/
 

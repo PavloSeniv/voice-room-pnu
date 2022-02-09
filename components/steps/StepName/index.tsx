@@ -1,7 +1,7 @@
 import styles from "./StepName.module.css";
 import Link from "next/link";
-import Button from "../../Button";
-import MainBlock from "../../MainBlock";
+import Button from "../../construction/Button";
+import MainBlock from "../../construction/MainBlock";
 import Image from "next/image";
 import React from "react";
 import { MainContext } from "../../../pages";

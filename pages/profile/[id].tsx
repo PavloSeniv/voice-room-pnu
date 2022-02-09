@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 
-import About from "../../components/Room/About";
+import About from "../../components/pages/Profile";
 import instanse from "../../core/axios";
 
 interface InstanceProps {

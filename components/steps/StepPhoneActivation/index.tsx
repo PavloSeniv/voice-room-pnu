@@ -1,7 +1,7 @@
 import styles from "./StepPhoneActivation.module.css";
 import Link from "next/link";
-import MainBlock from "../../MainBlock";
-import Button from "../../Button";
+import MainBlock from "../../construction/MainBlock";
+import Button from "../../construction/Button";
 import Image from "next/image";
 import React from "react";
 import clsx from "clsx";
@@ -15,7 +15,7 @@ export const ConfirmTel = (params) => {
     const nextDisabled = codes.some((v) => !v); //|| codes.length < 4
 
     const handleChangeInput = (event: React.ChangeEvent<HTMLInputElement>) => {
-        const id = Number(event.target.getAttribute("id")) - 1;
+        const id = Number(event.target.getAttribute("id"));
         const value = event.target.value;
         setCodes((prev) => {
             const newArr = [...prev];

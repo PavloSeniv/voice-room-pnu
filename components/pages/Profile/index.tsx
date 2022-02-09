@@ -1,4 +1,4 @@
-import styles from "./About.module.css";
+import styles from "./Profile.module.css";
 
 import Link from "next/link";
 import Image from "next/image";

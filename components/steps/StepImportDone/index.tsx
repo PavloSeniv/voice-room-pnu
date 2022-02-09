@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import Button from "../../Button";
+import Button from "../../construction/Button";
 import styles from "./StepImportDone.module.css";
-import MainBlock from "../../MainBlock";
+import MainBlock from "../../construction/MainBlock";
 import React from "react";
-import UserAvatar from "../../UserAvatar";
+import UserAvatar from "../../construction/UserAvatar";
 import { MainContext } from "../../../pages";
 
 export const SelectPhoto: React.FC = (params) => {

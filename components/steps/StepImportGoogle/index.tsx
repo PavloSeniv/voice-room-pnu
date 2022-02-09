@@ -1,7 +1,7 @@
 import styles from "./StepImportGoogle.module.css";
 import Link from "next/link";
-import MainBlock from "../../MainBlock";
-import Button from "../../Button";
+import MainBlock from "../../construction/MainBlock";
+import Button from "../../construction/Button";
 import Image from "next/image";
 import React from "react";
 import { MainContext } from "../../../pages";

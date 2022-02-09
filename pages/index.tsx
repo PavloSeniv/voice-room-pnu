@@ -1,12 +1,12 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import Welcome from "../components/loginStep/StepWelcome";
-import Phone from "../components/loginStep/StepPhone";
-import PhoneActivation from "../components/loginStep/StepPhoneActivation";
-import Name from "../components/loginStep/StepName";
+import Welcome from "../components/steps/StepWelcome";
+import Phone from "../components/steps/StepPhone";
+import PhoneActivation from "../components/steps/StepPhoneActivation";
+import Name from "../components/steps/StepName";
 
-import DoneGoogle from "../components/loginStep/StepImportDone";
-import ImportGoogle from "../components/loginStep/StepImportGoogle";
+import DoneGoogle from "../components/steps/StepImportDone";
+import ImportGoogle from "../components/steps/StepImportGoogle";
 import React from "react";
 
 const stepsCpmponents = {

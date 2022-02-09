@@ -1,4 +1,4 @@
-import styles from "./People.module.css";
+import styles from "./Room.module.css";
 import Link from "next/link";
 import Image from "next/image";
 

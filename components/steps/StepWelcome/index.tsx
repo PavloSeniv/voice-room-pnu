@@ -1,6 +1,6 @@
 import styles from "./StepWelcome.module.css";
-import MainBlock from "../../MainBlock";
-import Button from "../../Button";
+import MainBlock from "../../construction/MainBlock";
+import Button from "../../construction/Button";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Oval } from "react-loader-spinner";
