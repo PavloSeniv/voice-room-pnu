@@ -89,7 +89,7 @@ export default function Room(params) {
                     <div className={styles.rooms__listContainer}>
                         <ul className={styles.rooms__list}>
                             <li className={styles.rooms__listItem}>
-                                <Link href="/people">
+                                <Link href="/room">
                                     <a>
                                         <h5 className={styles.rooms__listItemTitle}>
                                             How create website?
@@ -259,7 +259,7 @@ export default function Room(params) {
                             </li>
 
                             <li className={styles.rooms__listItem}>
-                                <Link href="/people">
+                                <Link href="/room">
                                     <a>
                                         <h5 className={styles.rooms__listItemTitle}>
                                             Sleek Concrete Bacon?
@@ -429,7 +429,7 @@ export default function Room(params) {
                             </li>
 
                             <li className={styles.rooms__listItem}>
-                                <Link href="/people">
+                                <Link href="/room">
                                     <a>
                                         <h5 className={styles.rooms__listItemTitle}>
                                             What is the most controversial thing you own?
@@ -599,7 +599,7 @@ export default function Room(params) {
                             </li>
 
                             <li className={styles.rooms__listItem}>
-                                <Link href="/people">
+                                <Link href="/room">
                                     <a>
                                         <h5 className={styles.rooms__listItemTitle}>What is own?</h5>
 
@@ -767,7 +767,7 @@ export default function Room(params) {
                             </li>
 
                             <li className={styles.rooms__listItem}>
-                                <Link href="/people">
+                                <Link href="/room">
                                     <a>
                                         <h5 className={styles.rooms__listItemTitle}>What is own?</h5>
 
@@ -935,7 +935,7 @@ export default function Room(params) {
                             </li>
 
                             <li className={styles.rooms__listItem}>
-                                <Link href="/people">
+                                <Link href="/room">
                                     <a>
                                         <h5 className={styles.rooms__listItemTitle}>
                                             How create website?
@@ -1105,7 +1105,7 @@ export default function Room(params) {
                             </li>
 
                             <li className={styles.rooms__listItem}>
-                                <Link href="/people">
+                                <Link href="/room">
                                     <a>
                                         <h5 className={styles.rooms__listItemTitle}>
                                             Sleek Concrete Bacon?
@@ -1275,7 +1275,7 @@ export default function Room(params) {
                             </li>
 
                             <li className={styles.rooms__listItem}>
-                                <Link href="/people">
+                                <Link href="/room">
                                     <a>
                                         <h5 className={styles.rooms__listItemTitle}>
                                             What is the most controversial thing you own?
@@ -1445,7 +1445,7 @@ export default function Room(params) {
                             </li>
 
                             <li className={styles.rooms__listItem}>
-                                <Link href="/people">
+                                <Link href="/room">
                                     <a>
                                         <h5 className={styles.rooms__listItemTitle}>What is own?</h5>
 
@@ -1613,7 +1613,7 @@ export default function Room(params) {
                             </li>
 
                             <li className={styles.rooms__listItem}>
-                                <Link href="/people">
+                                <Link href="/room">
                                     <a>
                                         <h5 className={styles.rooms__listItemTitle}>What is own?</h5>
 

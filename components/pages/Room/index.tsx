@@ -8,7 +8,7 @@ import Header from "../../construction/Header";
 export default function Room(params) {
     return (
         <>
-            <Header/>
+            <Header />
 
             <main className={styles.people + " " + styles.people__container}>
                 <div className={styles.people__info}>
@@ -64,7 +64,7 @@ export default function Room(params) {
 
                     <ul className={styles.people__list_voice_user}>
                         <li>
-                            <Link href="/about">
+                            <Link href="/profile/admin">
                                 <a className={styles.people__list_voice_user_item}>
                                     <div className={styles.people__list_voice_user_block_photo}>
                                         <picture>
@@ -106,7 +106,7 @@ export default function Room(params) {
                         </li>
 
                         <li>
-                            <Link href="/about">
+                            <Link href="/profile/admin">
                                 <a className={styles.people__list_voice_user_item}>
                                     <div className={styles.people__list_voice_user_block_photo}>
                                         <picture>
@@ -131,7 +131,7 @@ export default function Room(params) {
                         </li>
 
                         <li>
-                            <Link href="/about">
+                            <Link href="/profile/admin">
                                 <a className={styles.people__list_voice_user_item}>
                                     <div className={styles.people__list_voice_user_block_photo}>
                                         <picture>
@@ -174,7 +174,7 @@ export default function Room(params) {
                         </li>
 
                         <li>
-                            <Link href="/about">
+                            <Link href="/profile/admin">
                                 <a className={styles.people__list_voice_user_item}>
                                     <div className={styles.people__list_voice_user_block_photo}>
                                         <picture>
@@ -206,7 +206,7 @@ export default function Room(params) {
 
                         <ul className={styles.people__block_users_list}>
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -227,7 +227,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -248,7 +248,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -269,7 +269,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -290,7 +290,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -311,7 +311,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -332,7 +332,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -353,7 +353,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -374,7 +374,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -395,7 +395,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -416,7 +416,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -439,7 +439,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -460,7 +460,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -481,7 +481,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -502,7 +502,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -523,7 +523,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -544,7 +544,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -565,7 +565,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -586,7 +586,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -607,7 +607,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -628,7 +628,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -649,7 +649,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -670,7 +670,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -693,7 +693,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -714,7 +714,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -735,7 +735,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -756,7 +756,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -777,7 +777,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -798,7 +798,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -819,7 +819,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -840,7 +840,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -861,7 +861,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -882,7 +882,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -903,7 +903,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -924,7 +924,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -947,7 +947,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -968,7 +968,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -989,7 +989,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -1010,7 +1010,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -1031,7 +1031,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -1052,7 +1052,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -1073,7 +1073,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -1094,7 +1094,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -1115,7 +1115,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -1136,7 +1136,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -1157,7 +1157,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -1178,7 +1178,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -1201,7 +1201,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -1222,7 +1222,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -1243,7 +1243,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -1264,7 +1264,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -1285,7 +1285,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -1306,7 +1306,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -1327,7 +1327,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -1348,7 +1348,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -1369,7 +1369,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -1390,7 +1390,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -1411,7 +1411,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -1432,7 +1432,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
@@ -1455,7 +1455,7 @@ export default function Room(params) {
                             </li>
 
                             <li>
-                                <Link href="/about">
+                                <Link href="/profile/admin">
                                     <a className={styles.people__block_users_item}>
                                         <picture>
                                             <source
