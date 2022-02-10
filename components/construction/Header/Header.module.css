@@ -34,3 +34,16 @@
     height: 50px;
     border-radius: 15px;
 }
+
+
+@media (max-width: 575px) {
+  .header__logo {
+    width: 100px;
+  }
+
+  .header__user {
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+  }
+}
+
