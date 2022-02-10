@@ -33,8 +33,8 @@
 ## Lesson
 
 - Lesson 1 - 2.31 Done
-- Lesson 2 - 1:33:13 
-- Lesson 3 -
+- Lesson 2 - 1:33:13 Done
+- Lesson 3 - 1.24.
 - Lesson 4 -
 - Lesson 5 -
 - Lesson 6 -
