@@ -53,6 +53,8 @@
 - interface
 - ts type
 - arrow func
+- Hooks
+- Context
   
 ## TODO PROJECT
 - Зміна голосу 
