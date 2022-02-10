@@ -1,7 +1,8 @@
-import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import Rooms from "../components/pages/Rooms";
+
 import Script from "next/script";
+
+import Rooms from "../components/pages/Rooms";
 
 export default function Room() {
   return (

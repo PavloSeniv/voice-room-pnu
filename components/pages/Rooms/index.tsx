@@ -7,6 +7,7 @@ import React, { useState } from "react";
 import PopUp from "../../construction/PopUp";
 import Header from "../../construction/Header";
 import CardConversations from "../../construction/CardСonversations";
+import Axios from "../../../core/axios";
 
 type PopUpProps = {
   open: boolean;
@@ -21,6 +22,16 @@ export default function Room(params) {
   const closeModal = () => setOpen(false);
 
   const openModal = () => setOpen((o) => !o);
+
+  const [rooms, setRooms] = React.useState([]);
+
+  React.useEffect(() => {
+    (async () => {
+      const { data } = await Axios.get("/rooms.json");
+      console.log(data);
+      setRooms(data);
+    })();
+  },[]);
 
   return (
     <>
@@ -80,59 +91,16 @@ export default function Room(params) {
       <section className={styles.rooms__listBg}>
         <div className={styles.rooms__listContainer}>
           <ul className={styles.rooms__list}>
-            <CardConversations
-              title="How create website?"
-              guests={[
-                "Alex Conroy",
-                "Roosevelt Reinger",
-                "George Muller",
-                "Mr. Ramona Parisian",
-              ]}
-              speakersAvatar={[
-                "/static/img/index/main/avatar_placeholder_users.png",
-                "/static/img/index/main/avatar_placeholder_users.png",
-                "/static/img/index/main/avatar_placeholder_users.png",
-                "/static/img/index/main/avatar_placeholder_users.png",
-              ]}
-              guestsCount={123}
-              speakersCount={23}
-            />
-
-            <CardConversations
-              title="How create website?"
-              guests={[
-                "Alex Conroy",
-                "Roosevelt Reinger",
-                "George Muller",
-                "Mr. Ramona Parisian",
-              ]}
-              speakersAvatar={[
-                "/static/img/index/main/avatar_placeholder_users.png",
-                "/static/img/index/main/avatar_placeholder_users.png",
-                "/static/img/index/main/avatar_placeholder_users.png",
-                "/static/img/index/main/avatar_placeholder_users.png",
-              ]}
-              guestsCount={123}
-              speakersCount={23}
-            />
-
-            <CardConversations
-              title="How create website?"
-              guests={[
-                "Alex Conroy",
-                "Roosevelt Reinger",
-                "George Muller",
-                "Mr. Ramona Parisian",
-              ]}
-              speakersAvatar={[
-                "/static/img/index/main/avatar_placeholder_users.png",
-                "/static/img/index/main/avatar_placeholder_users.png",
-                "/static/img/index/main/avatar_placeholder_users.png",
-                "/static/img/index/main/avatar_placeholder_users.png",
-              ]}
-              guestsCount={123}
-              speakersCount={23}
-            />
+            {rooms.map((obj, i) => (
+              <CardConversations key={obj.id}
+                title={obj.title}
+                guests={obj.guests
+                }
+                speakersAvatar={obj.speakersAvatar}
+                guestsCount={obj.guestsCount}
+                speakersCount={obj.speakersCount}
+              />
+            ))}
           </ul>
         </div>
       </section>

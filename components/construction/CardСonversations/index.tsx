@@ -21,9 +21,9 @@ export const CardConversations: React.FC<CardConversationsProps> = ({
   speakersCount,
 }) => {
   return (
-    <li className={styles.rooms__listItem}>
-      <Link href="/rooms/test-room">
-        <a>
+    <Link href="/rooms/test-room">
+      <a>
+        <li className={styles.rooms__listItem}>
           <h5 className={styles.rooms__listItemTitle}>{title}</h5>
 
           <div className={styles.rooms__listItemLogoUsers}>
@@ -43,8 +43,11 @@ export const CardConversations: React.FC<CardConversationsProps> = ({
             </div>
 
             <div className={styles.rooms__listItemUsers}>
-              {guests.map((name) => (
-                <div className={styles.rooms__listItemUsersBlock} key={name}>
+              {guests.map((name, i) => (
+                <div
+                  className={styles.rooms__listItemUsersBlock}
+                  key={name + i}
+                >
                   <h4 className={styles.rooms__listItemUsersName}>{name}</h4>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -93,9 +96,9 @@ export const CardConversations: React.FC<CardConversationsProps> = ({
               </svg>
             </div>
           </div>
-        </a>
-      </Link>
-    </li>
+        </li>
+      </a>
+    </Link>
   );
 };
 
