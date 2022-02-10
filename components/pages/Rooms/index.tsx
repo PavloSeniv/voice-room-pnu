@@ -80,11 +80,59 @@ export default function Room(params) {
       <section className={styles.rooms__listBg}>
         <div className={styles.rooms__listContainer}>
           <ul className={styles.rooms__list}>
-            <CardConversations title="How create website?" />
-            <CardConversations title="How create website?" />
-            <CardConversations title="How create website?" />
-            <CardConversations title="How create website?" />
-            <CardConversations title="How create website?" />
+            <CardConversations
+              title="How create website?"
+              guests={[
+                "Alex Conroy",
+                "Roosevelt Reinger",
+                "George Muller",
+                "Mr. Ramona Parisian",
+              ]}
+              speakersAvatar={[
+                "/static/img/index/main/avatar_placeholder_users.png",
+                "/static/img/index/main/avatar_placeholder_users.png",
+                "/static/img/index/main/avatar_placeholder_users.png",
+                "/static/img/index/main/avatar_placeholder_users.png",
+              ]}
+              guestsCount={123}
+              speakersCount={23}
+            />
+
+            <CardConversations
+              title="How create website?"
+              guests={[
+                "Alex Conroy",
+                "Roosevelt Reinger",
+                "George Muller",
+                "Mr. Ramona Parisian",
+              ]}
+              speakersAvatar={[
+                "/static/img/index/main/avatar_placeholder_users.png",
+                "/static/img/index/main/avatar_placeholder_users.png",
+                "/static/img/index/main/avatar_placeholder_users.png",
+                "/static/img/index/main/avatar_placeholder_users.png",
+              ]}
+              guestsCount={123}
+              speakersCount={23}
+            />
+
+            <CardConversations
+              title="How create website?"
+              guests={[
+                "Alex Conroy",
+                "Roosevelt Reinger",
+                "George Muller",
+                "Mr. Ramona Parisian",
+              ]}
+              speakersAvatar={[
+                "/static/img/index/main/avatar_placeholder_users.png",
+                "/static/img/index/main/avatar_placeholder_users.png",
+                "/static/img/index/main/avatar_placeholder_users.png",
+                "/static/img/index/main/avatar_placeholder_users.png",
+              ]}
+              guestsCount={123}
+              speakersCount={23}
+            />
           </ul>
         </div>
       </section>
@@ -92,7 +140,6 @@ export default function Room(params) {
       <PopUpContext.Provider value={{ open, closeModal }}>
         <PopUp />
       </PopUpContext.Provider>
-      
     </>
   );
 }

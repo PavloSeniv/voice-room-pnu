@@ -121,21 +121,6 @@
 }
 
 @media (max-width: 767px) {
-  .rooms {
-    margin-top: 3vmax;
-  }
-
-  .rooms__info {
-    justify-content: center;
-    row-gap: 20px;
-  }
-
-  .rooms__infoTitle {
-    justify-content: center;
-    row-gap: 20px;
-    margin-top: 3vmax;
-  }
-
   .rooms__listItem {
     padding: 2vmax;
   }
@@ -150,16 +135,5 @@
 
   .rooms__listImgUser {
     justify-content: center;
-  }
-}
-
-@media (max-width: 575px) {
-  .header__logo {
-    width: 100px;
-  }
-
-  .header__user {
-    -moz-column-gap: 20px;
-    column-gap: 20px;
   }
 }
