@@ -16,7 +16,7 @@ export default function RoomPage() {
 
   return (
     <div className={styles.bg__white}>
-      <People></People>
+      <People title=" What is the most controversial thing you own?" />
     </div>
   );
 }

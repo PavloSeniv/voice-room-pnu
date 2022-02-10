@@ -24,7 +24,7 @@ export const ProfilePage: React.FC<ProfileProps> = ({
             <Header/>
             <main className={styles.about + " " + styles.about__container}>
                 <div className={styles.about__info}>
-                    <Link href="/room">
+                    <Link href="/rooms/test-room">
                         <a className={styles.about__info_title}>
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"

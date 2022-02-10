@@ -40,6 +40,7 @@
   margin-top: 54px;
   height: -webkit-max-content;
   height: -moz-max-content;
+  min-height: 80vh;
   height: max-content;
 }
 
@@ -51,8 +52,7 @@
 }
 
 .people__list_info_room {
-  padding: 2vmax;
-  padding-top: 40px;
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -114,10 +114,11 @@
 
 .people__list_voice_user {
   display: flex;
-  gap: 40px 10px;
+  gap: 40px 20px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
+  margin-top: 40px;
 }
 
 .people__list_voice_user_item {
