@@ -22,7 +22,7 @@ export const CardConversations: React.FC<CardConversationsProps> = ({
 }) => {
   return (
     <li className={styles.rooms__listItem}>
-      <Link href="/room">
+      <Link href="/rooms/test-room">
         <a>
           <h5 className={styles.rooms__listItemTitle}>{title}</h5>
 
