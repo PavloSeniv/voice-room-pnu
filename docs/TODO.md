@@ -22,7 +22,9 @@
 - Sequlize для бд
 - For TS create touch tsconfig.json
 - vb audio virtual cable
-- Якщо є async func то краще обертати  в try catch
+- Якщо є async func то краще обертати в try catch
+- "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
+- Хук працює тільки в компоненті.(Not working getServerSideProps)
 
 ## Pages
 
@@ -55,7 +57,8 @@
 - arrow func
 - Hooks
 - Context
-  
+
 ## TODO PROJECT
-- Зміна голосу 
+
+- Зміна голосу
 - Караоке кімната

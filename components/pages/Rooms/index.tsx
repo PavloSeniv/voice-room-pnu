@@ -14,24 +14,31 @@ type PopUpProps = {
   closeModal: () => void;
 };
 
+interface RoomPageProps{
+  children: any;
+  // rooms: string[];
+}
+
 export const PopUpContext = React.createContext<PopUpProps>({} as PopUpProps);
 
-export default function Room(params) {
+export const RoomPage: React.FC<RoomPageProps> = ({ children }) => {
   const [open, setOpen] = React.useState<boolean>(false);
 
   const closeModal = () => setOpen(false);
 
   const openModal = () => setOpen((o) => !o);
 
-  const [rooms, setRooms] = React.useState([]);
+  // Відображення кімнат через React
+  // const [rooms, setRooms] = React.useState([]); // Зчитування стану
 
-  React.useEffect(() => {
-    (async () => {
-      const { data } = await Axios.get("/rooms.json");
-      console.log(data);
-      setRooms(data);
-    })();
-  },[]);
+  // React.useEffect(() => {
+  //   // Спочатку чекаємо асинхронної відповіді від Axios і відображаємо кімнати
+  //   (async () => {
+  //     const { data } = await Axios.get("/rooms.json");
+  //     console.log(data);
+  //     setRooms(data);
+  //   })();
+  // }, []);
 
   return (
     <>
@@ -88,26 +95,35 @@ export default function Room(params) {
         </div>
       </main>
 
-      <section className={styles.rooms__listBg}>
-        <div className={styles.rooms__listContainer}>
-          <ul className={styles.rooms__list}>
-            {rooms.map((obj, i) => (
-              <CardConversations key={obj.id}
-                title={obj.title}
-                guests={obj.guests
-                }
-                speakersAvatar={obj.speakersAvatar}
-                guestsCount={obj.guestsCount}
-                speakersCount={obj.speakersCount}
-              />
-            ))}
-          </ul>
-        </div>
-      </section>
+      {children}
 
       <PopUpContext.Provider value={{ open, closeModal }}>
         <PopUp />
       </PopUpContext.Provider>
     </>
   );
-}
+};
+
+export default RoomPage;
+
+// export const getServerSideProps = async () => {
+//   try {
+//     const { data } = await Axios.get("/rooms.json");
+//     console.log(data);
+//     return{
+//       props:{
+//         rooms: data,
+//       }
+//     }
+//   } catch (error) {
+//     console.log("Помилка не існує такого файлу");
+//   }
+//   return {
+//     props: {
+//       rooms:[]
+//     },
+//   };
+// };
+
+// У компоненті не можна використовувати цей метод
+
