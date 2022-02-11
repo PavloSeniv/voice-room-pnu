@@ -32,7 +32,7 @@ export const ConfirmTel = (params) => {
     const onSubmit = async () => {
         try {
             setIsLoading(true);
-            await Axios.get("/todos");
+            await Axios.get("/rooms.json");
             router.push("/rooms")
         } catch (error) {
             alert("Помилка при активації");

@@ -22,12 +22,18 @@ export default function RoomPage({ roomInfo }) {
   );
 }
 
+export const getServerSideProps = async (context) => {
+  console.log(context);
+  console.log(context.query);
+  console.log("id " + context.query.id);
 
-export const getServerSideProps = async () => {
   try {
     const { data } = await Axios.get("/rooms.json");
-    const roomInfo = data.find((obj) => obj.id === "620576809df6ff474112d3f6");
-    console.log(data);
+    const roomId = context.query.id;
+    const roomInfo = data.find((obj) => obj.id === roomId);
+    // const roomInfo = data.find((obj) => obj.id === "620576809df6ff474112d3f6");
+
+    // console.log(data);
     return {
       props: {
         roomInfo,
@@ -39,6 +45,7 @@ export const getServerSideProps = async () => {
   }
   return {
     props: {
+      roomInfo: [],
       rooms: [],
     },
   };

@@ -69,12 +69,14 @@
   line-height: 57px;
   color: #000;
   font-size: calc(20px + 22 * ((100vw - 320px) / 1600));
+  flex: 0 0 70%;
 }
 
 .people__block_leave {
   display: flex;
   -moz-column-gap: 34px;
   column-gap: 34px;
+  flex: 0 0 20%;
 }
 
 .people__button_hand {
