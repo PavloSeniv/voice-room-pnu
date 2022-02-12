@@ -1,21 +1,21 @@
 import express from "express";
-import passport from "passport";
+import fs from "fs";
+import https from "https";
+import dotenv from "dotenv";
+
+// Cerf
+const httpsOptions = {
+  key: fs.readFileSync("./cerf/server-key.pem"), // путь к ключу
+  cert: fs.readFileSync("./cerf/server-cert.pem"), // путь к сертификату
+};
+
+dotenv.config({
+  path: "server/.env",
+});
+
+import { passport } from "./core/passport";
 
 const app = express();
-
-app.get("/auth/google", (req, res) => {
-  res.send("Hello it`s server!");
-});
-
-app.post("/auth/google", passport.authenticate("local"));
-
-app.listen(3001, () => {
-  // if (err) {
-  //   throw Error("Server Error!!!");
-  // }
-  console.log("Server Runned!!!");
-});
-
 
 app.get("/auth/github", passport.authenticate("github"));
 
@@ -25,5 +25,10 @@ app.get(
   function (req, res) {
     // Successful authentication, redirect home.
     res.redirect("/");
+    res.send(alert("Done"));
   }
 );
+
+https.createServer(httpsOptions, app).listen(3001, () => {
+  console.log("Server Runned!!!");
+});
