@@ -40,7 +40,8 @@
 - npm i pg pg-hstore # PostgreSQL
 - npm install --save-dev sequelize-cli
 - npx sequelize-cli init
-
+- npx sequelize-cli db:migrate
+- npx sequelize-cli model:generate --name users --attributes fullname:string,username:string,avatarUrl:string,phone:string,isActive:integer,
 
 ## Pages
 
@@ -53,7 +54,7 @@
 - Lesson 1 - 2.31 Done
 - Lesson 2 - 1:33:13 Done
 - Lesson 3 - 1.24. Done
-- Lesson 4 - 0.9.45
+- Lesson 4 - 0.9.45 2.15 2.22
 - Lesson 5 -
 - Lesson 6 -
 - Lesson 7 -
