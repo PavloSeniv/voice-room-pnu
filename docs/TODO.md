@@ -25,7 +25,14 @@
 - Якщо є async func то краще обертати в try catch
 - "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
 - Хук працює тільки в компоненті.(Not working getServerSideProps)
-
+  BackEnd
+- npm i express @types/express cors ts-node-dev 
+- npm install passport @types/passport - Дозволяє на серверні частині зручно проводити авторизацію
+- npm install passport-google-oidc (@types not)
+- npm install dotenv --save
+- npm install passport-github
+- npm i --save-dev @types/passport-github
+- 
 ## Pages
 
 ### \_app.
