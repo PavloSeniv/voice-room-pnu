@@ -38,6 +38,10 @@
   DB
 - npm install --save sequelize
 - npm i pg pg-hstore # PostgreSQL
+- npm install --save-dev sequelize-cli
+- npx sequelize-cli init
+
+
 ## Pages
 
 ### \_app.
