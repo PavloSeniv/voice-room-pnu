@@ -33,7 +33,7 @@ passport.use(
       const user = await users.create(obj);
       console.log(user);
 
-      cb();
+      cb(user);
     }
   )
 );

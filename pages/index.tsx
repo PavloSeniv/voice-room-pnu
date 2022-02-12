@@ -11,8 +11,8 @@ import React from "react";
 
 const stepsCpmponents = {
   0: Welcome,
-  1: Name,
-  2: ImportGoogle,
+  1: ImportGoogle,
+  2: Name,
   3: DoneGoogle,
   4: Phone,
   5: PhoneActivation,
