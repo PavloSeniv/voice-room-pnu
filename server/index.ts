@@ -19,6 +19,8 @@ import { passport } from "./core/passport";
 
 const app = express();
 
+app.use(passport.initialize());
+
 app.get("/auth/github", passport.authenticate("github"));
 
 app.get(
@@ -26,8 +28,9 @@ app.get(
   passport.authenticate("github", { failureRedirect: "/" }),
   function (req, res) {
     // Successful authentication, redirect home.
-    res.redirect("/");
-    res.send(alert("Done"));
+    // res.redirect("/");
+    // res.send();
+    res.json(req.user);
   }
 );
 
