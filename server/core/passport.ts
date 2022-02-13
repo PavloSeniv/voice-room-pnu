@@ -41,7 +41,6 @@ passport.use(
           // console.log(user);
           return done(null, user.toJSON());
         }
-
         done(null, findUser);
       } catch (error) {
         done(error);

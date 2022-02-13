@@ -26,11 +26,16 @@ app.get("/auth/github", passport.authenticate("github"));
 app.get(
   "/auth/github/callback",
   passport.authenticate("github", { failureRedirect: "/" }),
-  function (req, res) {
+  (req, res) => {
     // Successful authentication, redirect home.
     // res.redirect("/");
     // res.send();
-    res.json(req.user);
+    // res.json(req.user);
+    res.send(
+      `<script>window.opener.postMessage('${JSON.stringify(
+        req.user
+      )}','*');window.close()</script>`
+    ); // автоматичне закриття вікна
   }
 );
 
