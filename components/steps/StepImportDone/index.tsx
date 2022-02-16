@@ -6,6 +6,22 @@ import MainBlock from "../../construction/MainBlock";
 import React from "react";
 import UserAvatar from "../../construction/UserAvatar";
 import { MainContext } from "../../../pages";
+import { Axios } from "../../../core/axios";
+
+const uploadFile = async (file: File) => {
+  const formData = new FormData();
+
+  formData.append("photo", file);
+
+  const { data } = await Axios({
+    method: "post",
+    url: "upload",
+    data: formData,
+    headers: { "Content-Type": "multipart/form-data" },
+  });
+
+  return data;
+};
 
 export const SelectPhoto: React.FC = (params) => {
   const { onNextStep } = React.useContext(MainContext);
@@ -15,13 +31,15 @@ export const SelectPhoto: React.FC = (params) => {
     "/static/img/index/main/avatar_placeholder.png"
   );
 
-  const handleChangeImage = (e: Event): void => {
+  const handleChangeImage = async (e: Event) => {
     // console.log(e.target.files); // Виводжу в консоль завантажену фотку
     const file = (e.target as HTMLInputElement).files[0];
     if (file) {
       const imageUrl = URL.createObjectURL(file); //blob
       setAvatarUrl(imageUrl);
       console.log(imageUrl);
+      const data = await uploadFile(file);
+      console.log(data);
     }
   };
 
