@@ -10,6 +10,7 @@ export const GetGoogle: React.FC = (params) => {
   const { onNextStep } = React.useContext(MainContext);
 
   const onClickAuth = () => {
+    
     // const newWindow = window.open(
     //   "https://localhost/",
     //   "Auth",
@@ -45,19 +46,27 @@ export const GetGoogle: React.FC = (params) => {
       700
     );
 
-    const timer = setInterval(() => {
-      if (popUpWindow.closed) {
-        clearInterval(timer);
-        onNextStep();
-      }
-    }, 1000);
+    //   const timer = setInterval(() => {
+    //     if (popUpWindow.closed) {
+    //       clearInterval(timer);
+    //       onNextStep();
+    //     }
+    //   }, 1000);
+    // };
   };
 
   React.useEffect(() => {
-    window.addEventListener("message", (data) => {
-      console.log(data);
+    window.addEventListener("message", ({ data }) => {
+      const user: string = data;
+      // console.log(user);
+      if (typeof user === "string" && user.includes("avatarUrl")) {
+        const jsonUser = JSON.parse(user);
+        console.log(jsonUser);
+        onNextStep();
+      }
     });
   });
+
   // const onClickNextStep = () => {
   //   onNextStep();
   // };
