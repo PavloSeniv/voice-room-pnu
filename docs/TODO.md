@@ -1,6 +1,7 @@
 # TODO
 
-- [ ] (Переверстати все на компоненти)
+- [x] (Переверстати все на компоненти)
+- [ ] (Welcome Step додати силуект навушників)
 
 ## Next.js
 
@@ -26,7 +27,7 @@
 - "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
 - Хук працює тільки в компоненті.(Not working getServerSideProps)
   BackEnd
-- npm i express @types/express cors ts-node-dev
+- npm i express @types/express cors @types/cors ts-node-dev
 - npm install passport @types/passport - Дозволяє на серверні частині зручно проводити авторизацію
 - npm install passport-google-oidc (@types not)
 - npm install dotenv --save
@@ -42,6 +43,10 @@
 - npx sequelize-cli init
 - npx sequelize-cli db:migrate
 - npx sequelize-cli model:generate --name users --attributes fullname:string,username:string,avatarUrl:string,phone:string,isActive:integer,
+  Upload
+- npm i cloudinary Хмара для збереження фото
+- npm i multer npm i --save-dev @types/multer Зручний спосіб завантажити файли, передача з фронтенда на бекенд
+- npm i nanoid
 
 ## Pages
 
