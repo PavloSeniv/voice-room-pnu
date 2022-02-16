@@ -4,7 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import Axios from "../../core/axios";
+import { Axios } from "../../core/axios";
 
 import People from "../../components/pages/Room";
 

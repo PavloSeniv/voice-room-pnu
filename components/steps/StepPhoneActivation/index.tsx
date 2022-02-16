@@ -5,7 +5,7 @@ import Button from "../../construction/Button";
 import Image from "next/image";
 import React from "react";
 import clsx from "clsx";
-import Axios from "../../../core/axios";
+import {Axios} from "../../../core/axios";
 import {useRouter} from "next/router";
 
 export const ConfirmTel = (params) => {

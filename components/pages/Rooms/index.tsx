@@ -7,7 +7,7 @@ import React, { useState } from "react";
 import PopUp from "../../construction/PopUp";
 import Header from "../../construction/Header";
 import CardConversations from "../../construction/CardСonversations";
-import Axios from "../../../core/axios";
+import {Axios} from "../../../core/axios";
 
 type PopUpProps = {
   open: boolean;
