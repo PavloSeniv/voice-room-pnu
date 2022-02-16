@@ -7,8 +7,8 @@ import React from "react";
 import { MainContext } from "../../../pages";
 
 export default function Name(params) {
-  const [inputValue, setInputValue] = React.useState<string>("");
-  const { onNextStep } = React.useContext(MainContext);
+  const { onNextStep, userData, setFieldValue } = React.useContext(MainContext);
+  const [inputValue, setInputValue] = React.useState<string>(userData.fullname);
 
   const nextDisabled = !inputValue;
 
@@ -17,6 +17,7 @@ export default function Name(params) {
   };
 
   const onClickNextStep = () => {
+    setFieldValue("fullname", inputValue);
     onNextStep();
   };
 
