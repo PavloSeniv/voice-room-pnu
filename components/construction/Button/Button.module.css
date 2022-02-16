@@ -20,6 +20,11 @@
   cursor: default;
 }
 
+.main__button:disabled:hover {
+  background-color: #181a1bda;
+  cursor: pointer;
+}
+
 .blue {
   background-color: #5b75a6 !important;
 }
