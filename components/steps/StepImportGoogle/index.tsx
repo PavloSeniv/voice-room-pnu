@@ -83,12 +83,7 @@ export const GetGoogle: React.FC = (params) => {
         onClick={onClickAuth}
         className={styles.main__button + " " + styles.main__buttonGithubBg}
       >
-        <Image
-          src="/static/svgicons/github_icons.svg"
-          className={styles.main__buttonGithub}
-          height={25}
-          width={25}
-        />
+        <Image src="/static/svgicons/github_icons.svg" height={20} width={20} />
         <h3 className={styles.main__buttonTitle}>Import from GitHub</h3>
         <Image src="/static/svgicons/arrow-right.svg" height={20} width={21} />
       </Button>
