@@ -7,10 +7,9 @@ import React from "react";
 import { MainContext } from "../../../pages";
 
 export const GetGoogle: React.FC = (params) => {
-  const { onNextStep } = React.useContext(MainContext);
+  const { onNextStep, setUserData } = React.useContext(MainContext);
 
   const onClickAuth = () => {
-    
     // const newWindow = window.open(
     //   "https://localhost/",
     //   "Auth",
@@ -39,7 +38,7 @@ export const GetGoogle: React.FC = (params) => {
       );
     };
 
-    const popUpWindow = popUpWindowFunction(
+    popUpWindowFunction(
       "https://localhost:3001/auth/github/callback",
       "Auth",
       700,
@@ -61,6 +60,7 @@ export const GetGoogle: React.FC = (params) => {
       // console.log(user);
       if (typeof user === "string" && user.includes("avatarUrl")) {
         const jsonUser = JSON.parse(user);
+        setUserData(jsonUser);
         console.log(jsonUser);
         onNextStep();
       }
@@ -79,7 +79,16 @@ export const GetGoogle: React.FC = (params) => {
         <h3 className={styles.main__photoName}>Pavlo Seniv</h3>
       </div>
 
-      <Button onClick={onClickAuth} className={styles.main__button}>
+      <Button
+        onClick={onClickAuth}
+        className={styles.main__button + " " + styles.main__buttonGithubBg}
+      >
+        <Image
+          src="/static/svgicons/github_icons.svg"
+          className={styles.main__buttonGithub}
+          height={25}
+          width={25}
+        />
         <h3 className={styles.main__buttonTitle}>Import from GitHub</h3>
         <Image src="/static/svgicons/arrow-right.svg" height={20} width={21} />
       </Button>

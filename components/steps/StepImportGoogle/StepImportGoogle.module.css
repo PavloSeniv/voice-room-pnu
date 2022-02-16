@@ -80,7 +80,16 @@
   margin-top: 40px;
 }
 
-.main__button:hover {
+.main__buttonGithub {
+  top: -4px !important;
+}
+
+.main__buttonGithubBg {
+  background: #5c6bc0;
+}
+
+.main__button:hover,
+.main__buttonGithub:hover {
   cursor: pointer;
   background: #5b75a6e7;
 }
