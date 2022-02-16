@@ -85,7 +85,7 @@
   width: 120px;
   height: 120px;
   border: 1.875px solid rgba(0, 0, 0, 0.2);
-  border-radius: 35px;
+  border-radius: 35px !important;
 }
 
 .about__user_info_username {
@@ -121,7 +121,7 @@
   height: 70px;
   border: 6px solid #5b75a6;
   border-radius: 45px;
-  background: unset;
+  background: unset !important;
   font-family: Nunito;
   font-style: normal;
   font-weight: 600;
@@ -129,13 +129,14 @@
   line-height: 41px;
   color: #5b75a6;
   font-size: calc(21px + 9 * ((100vw - 320px) / 1600));
+  margin-top: 0 !important;
 }
 
 .about__user_bio {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-  flex:  0 0 60%;
+  flex: 0 0 60%;
 }
 
 .about__user_bio_info {

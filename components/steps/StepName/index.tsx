@@ -37,7 +37,7 @@ export default function Name(params) {
       </form>
 
       <Button
-        color="green"
+        color="blue"
         disabled={nextDisabled}
         onClick={onClickNextStep}
         className={styles.main__button}
