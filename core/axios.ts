@@ -1,9 +1,10 @@
-import Axios from "axios";
+import axios from "axios";
 
-const instanse = Axios.create({
+const Axios = axios.create({
   // baseURL: "https://jsonplaceholder.typicode.com/",
-  baseURL: "http://localhost:3000",
-  withCredentials: true, // CORSE
+  baseURL: "http://localhost:3001",
+  // baseURL: "https://localhost:3001",
+  // withCredentials: true, // CORSE
 });
 
-export default instanse;
+export { Axios };
