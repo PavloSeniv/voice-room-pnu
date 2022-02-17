@@ -8,10 +8,10 @@ import cors from "cors";
 import { nanoid } from "nanoid";
 
 // Cerf
-// const httpsOptions = {
-//   key: fs.readFileSync("./cerf/server-key.pem"), // путь к ключу
-//   cert: fs.readFileSync("./cerf/server-cert.pem"), // путь к сертификату
-// };
+const httpsOptions = {
+  key: fs.readFileSync("./cert/key.pem"), // путь к ключу
+  cert: fs.readFileSync("./cert/cert.pem"), // путь к сертификату
+};
 
 dotenv.config({
   path: "server/.env",
@@ -46,7 +46,7 @@ app.post("/upload", uploader.single("photo"), (req, res) => {
 });
 
 app.get("/test", (req, res) => {
-  res.json("123");
+  res.json("Test Server");
 });
 
 app.get("/auth/github", passport.authenticate("github"));
@@ -67,12 +67,14 @@ app.get(
   }
 );
 
-// https.createServer(httpsOptions, app).listen(3001, () => {
-//   console.log("Server Runned!!!");
-// });
+https.createServer(httpsOptions, app).listen(3001, () => {
+  console.log("Server HTTPS Runned in 3001 port!!! ");
+});
+
+http.createServer(app).listen(3002, () => {
+  console.log("Server HTTP Runned in 3002 port!!!");
+});
 
 // app.listen(3001, () => {
 //   console.log("Server Runned!!!");
 // });
-
-http.createServer(app).listen(3001, () => {});
