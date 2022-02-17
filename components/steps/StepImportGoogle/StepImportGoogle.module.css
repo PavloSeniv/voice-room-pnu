@@ -73,13 +73,12 @@
   justify-content: center;
   -moz-column-gap: 11px;
   column-gap: 11px;
-  width: 350px;
+  width: 380px;
   height: 70px;
   background: #5b75a6;
   border-radius: 50px;
   margin-top: 40px;
 }
-
 
 .main__buttonGithubBg {
   background: #5c6bc0;

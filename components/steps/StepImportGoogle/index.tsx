@@ -73,11 +73,11 @@ export const GetGoogle: React.FC = (params) => {
 
   return (
     <MainBlock>
-      <h1 className={styles.main__title}>Do yo wont import from Google?</h1>
-      <div className={styles.main__photoSelect}>
+      <h1 className={styles.main__title}>Do yo wont import from ...?</h1>
+      {/* <div className={styles.main__photoSelect}>
         <div className={styles.main__photoPlaceholder}>PS</div>
         <h3 className={styles.main__photoName}>Pavlo Seniv</h3>
-      </div>
+      </div> */}
 
       <Button
         onClick={onClickAuth}
@@ -88,7 +88,25 @@ export const GetGoogle: React.FC = (params) => {
         <Image src="/static/svgicons/arrow-right.svg" height={20} width={21} />
       </Button>
 
-      <Link href="/room">
+      <Button
+        onClick={onClickAuth}
+        className={styles.main__button + " " + styles.main__buttonGithubBg}
+      >
+        <Image src="/static/svgicons/github_icons.svg" height={20} width={20} />
+        <h3 className={styles.main__buttonTitle}>Import from Facebook</h3>
+        <Image src="/static/svgicons/arrow-right.svg" height={20} width={21} />
+      </Button>
+
+      <Button
+        onClick={onClickAuth}
+        className={styles.main__button + " " + styles.main__buttonGithubBg}
+      >
+        <Image src="/static/svgicons/github_icons.svg" height={20} width={20} />
+        <h3 className={styles.main__buttonTitle}>Import from Google</h3>
+        <Image src="/static/svgicons/arrow-right.svg" height={20} width={21} />
+      </Button>
+
+      <Link href="/rooms">
         <a className={styles.main__linkSignIn}>Have invite text? Sign in</a>
       </Link>
     </MainBlock>
