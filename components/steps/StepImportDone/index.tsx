@@ -27,7 +27,8 @@ export const SelectPhoto: React.FC = (params) => {
   const { onNextStep, userData, setFieldValue } = React.useContext(MainContext);
 
   const [avatarUrl, setAvatarUrl] = React.useState<string>(
-    "/static/img/index/main/avatar_placeholder.png"
+    //"/static/img/index/main/avatar_placeholder.png"
+    userData.avatarUrl
   );
 
   const inputFileRef = React.useRef<HTMLInputElement>(null); //Витягаю інпут
