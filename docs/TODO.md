@@ -56,6 +56,10 @@
   Proxy
 - npm install -g local-ssl-proxy
 - local-ssl-proxy --source 3003 --target 3000
+  Image size
+- npm install sharp
+- npm install @types/sharp
+
 
 ## Pages
 
