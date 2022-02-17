@@ -17,7 +17,7 @@ export const Welcome: React.FC = () => {
   useEffect(() => {
     setTimeout(function () {
       setStyle({ display: "none" });
-    }, 3000);
+    }, 1000);
   }, []);
 
   return (
