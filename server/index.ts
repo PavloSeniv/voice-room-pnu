@@ -31,7 +31,12 @@ const uploader = multer({
     filename: function (_, file, cb) {
       cb(
         null,
-        file.fieldname + "-" + nanoid(6) + "." + file.mimetype.split("/").pop()
+        // file.fieldname + "-" + nanoid(6) + "." + file.mimetype.split("/").pop()
+        file.fieldname +
+          "-" +
+          nanoid(6) +
+          "." +
+          file.originalname.split(".").pop()
       );
     },
   }),
