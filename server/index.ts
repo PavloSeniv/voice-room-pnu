@@ -6,7 +6,7 @@ import dotenv from "dotenv";
 import multer from "multer";
 import cors from "cors";
 import { nanoid } from "nanoid";
-
+import sharp from "sharp";
 // Cerf
 const httpsOptions = {
   key: fs.readFileSync("./cert/key.pem"), // путь к ключу
@@ -47,7 +47,21 @@ app.use(cors());
 app.use(passport.initialize());
 
 app.post("/upload", uploader.single("photo"), (req, res) => {
-  res.json(req.file);
+  const filePath = req.file.path;
+  sharp(filePath)
+    .resize(300, 300)
+    .toFormat("jpeg")
+    .toFile(filePath.replace(".png", ".webp"), (err) => {
+      if (err) {
+        throw err;
+      }
+      fs.unlinkSync(filePath);
+
+      // res.json(req.file);
+      res.json({
+        url: `/avatars/${req.file.filename.replace(".png", ".webp")}`,
+      });
+    });
 });
 
 app.get("/test", (req, res) => {
