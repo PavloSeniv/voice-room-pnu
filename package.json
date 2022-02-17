@@ -19,7 +19,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "server": "ts-node-dev --respawn --transpile-only server/index.ts"
+    "server": "ts-node-dev --respawn --transpile-only server/index.ts",
+    "serverHTTPS": "ts-node-dev --respawn --transpile-only server.ts"
   },
   "dependencies": {
     "@types/express": "^4.17.13",

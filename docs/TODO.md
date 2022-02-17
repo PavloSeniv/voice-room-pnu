@@ -47,6 +47,15 @@
 - npm i cloudinary Хмара для збереження фото
 - npm i multer npm i --save-dev @types/multer Зручний спосіб завантажити файли, передача з фронтенда на бекенд
 - npm i nanoid
+  SSL
+- openssl genrsa -out key.pem
+- openssl req -new -key key.pem -out csr.pem
+- openssl x509 -req -days 365 -in csr.pem -signkey key.pem -out cert.pem
+- chrome://flags Allow invalid SSL
+- Let`s Encrypt
+  Proxy
+- npm install -g local-ssl-proxy
+- local-ssl-proxy --source 3003 --target 3000
 
 ## Pages
 
