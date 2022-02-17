@@ -8,7 +8,7 @@ import UserAvatar from "../../construction/UserAvatar";
 import { MainContext } from "../../../pages";
 import { Axios } from "../../../core/axios";
 
-const uploadFile = async (file: File) => {
+const uploadFile = async (file: File): Promise<{ url: string }> => {
   const formData = new FormData();
 
   formData.append("photo", file);
@@ -24,22 +24,27 @@ const uploadFile = async (file: File) => {
 };
 
 export const SelectPhoto: React.FC = (params) => {
-  const { onNextStep } = React.useContext(MainContext);
-  const inputFileRef = React.useRef<HTMLInputElement>(null); //Витягаю інпут
+  const { onNextStep, userData, setFieldValue } = React.useContext(MainContext);
 
   const [avatarUrl, setAvatarUrl] = React.useState<string>(
     "/static/img/index/main/avatar_placeholder.png"
   );
 
+  const inputFileRef = React.useRef<HTMLInputElement>(null); //Витягаю інпут
+
   const handleChangeImage = async (e: Event) => {
     // console.log(e.target.files); // Виводжу в консоль завантажену фотку
-    const file = (e.target as HTMLInputElement).files[0];
+    const target = e.target as HTMLInputElement;
+    const file = target.files[0];
     if (file) {
       const imageUrl = URL.createObjectURL(file); //blob
       setAvatarUrl(imageUrl);
-      console.log(imageUrl);
+      //console.log(imageUrl);
       const data = await uploadFile(file);
-      console.log(data);
+      target.value = "";
+      setAvatarUrl(data.url);
+      //console.log(data);
+      setFieldValue("avatarUrl", data.url);
     }
   };
 
@@ -55,7 +60,7 @@ export const SelectPhoto: React.FC = (params) => {
 
   return (
     <MainBlock>
-      <h1 className={styles.main__title}>Okey, Seniv Pavlo</h1>
+      <h1 className={styles.main__title}>Okey, {userData.fullname}</h1>
       <h2 className={styles.main__info}>It`s your photo</h2>
 
       <form action="" method="post" className={styles.main__photoSelect}>
