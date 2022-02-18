@@ -7,6 +7,14 @@ import multer from "multer";
 import cors from "cors";
 import { nanoid } from "nanoid";
 import sharp from "sharp";
+import { Code } from "../models";
+
+declare global {
+  namespace Express {
+    interface User extends User {}
+  }
+}
+
 // Cerf
 const httpsOptions = {
   key: fs.readFileSync("./cert/key.pem"), // путь к ключу
@@ -22,6 +30,9 @@ import "./core/db";
 import { passport } from "./core/passport";
 
 const app = express();
+
+const randomCode = (max: number = 9999, min: number = 1000) =>
+  Math.floor(Math.random() * (max - min + 1)) + min;
 
 const uploader = multer({
   storage: multer.diskStorage({
@@ -43,6 +54,7 @@ const uploader = multer({
 });
 
 app.use(cors());
+app.use(express.json());
 
 app.use(passport.initialize());
 
@@ -65,7 +77,18 @@ app.post("/upload", uploader.single("photo"), (req, res) => {
 });
 
 app.get("/test", (req, res) => {
-  res.json("Test Server");
+  res.json("Test Server Working");
+});
+
+app.get("/auth/phone", (req, res) => {
+  const phone = req.body.phone;
+  const user_id = req.user.id;
+  if (phone) {
+    const code = Code.create({
+      code: randomCode(),
+      user_id: user_id,
+    });
+  }
 });
 
 app.get("/auth/github", passport.authenticate("github"));
