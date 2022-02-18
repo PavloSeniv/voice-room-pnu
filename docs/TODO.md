@@ -41,8 +41,10 @@
 - npm i pg pg-hstore # PostgreSQL
 - npm install --save-dev sequelize-cli
 - npx sequelize-cli init
-- npx sequelize-cli db:migrate
 - npx sequelize-cli model:generate --name users --attributes fullname:string,username:string,avatarUrl:string,phone:string,isActive:integer,
+- npx sequelize-cli model:generate --name Code --attributes code:string,user_id:integer
+- npx sequelize-cli db:migrate
+- unique: true - унікальні значення
   Upload
 - npm i cloudinary Хмара для збереження фото
 - npm i multer npm i --save-dev @types/multer Зручний спосіб завантажити файли, передача з фронтенда на бекенд
@@ -59,7 +61,6 @@
   Image size
 - npm install sharp
 - npm install @types/sharp
-
 
 ## Pages
 
