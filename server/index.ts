@@ -8,10 +8,11 @@ import cors from "cors";
 import { nanoid } from "nanoid";
 import sharp from "sharp";
 import { Code } from "../models";
-
+import { UserProps } from "../pages";
+import { Axios } from "../core/axios";
 declare global {
   namespace Express {
-    interface User extends User {}
+    interface User extends UserProps {}
   }
 }
 
@@ -80,16 +81,86 @@ app.get("/test", (req, res) => {
   res.json("Test Server Working");
 });
 
-app.get("/auth/phone", (req, res) => {
-  const phone = req.body.phone;
-  const user_id = req.user.id;
-  if (phone) {
-    const code = Code.create({
-      code: randomCode(),
-      user_id: user_id,
-    });
+app.get(
+  "/auth/me",
+  passport.authenticate("jwt", { session: false }),
+  (req, res) => {
+    res.json(req.user);
   }
-});
+);
+
+app.get(
+  "/auth/sms/activate",
+  passport.authenticate("jwt", { session: false }),
+  async (req, res) => {
+    const userId = req.user.id;
+    const smsCode = req.query.code;
+
+    if (!smsCode) {
+      return res.status(400).send();
+    }
+
+    const whereQuery = { code: smsCode, user_id: userId };
+
+    try {
+      const findCode = await Code.findOne({
+        where: whereQuery,
+      });
+
+      if (findCode) {
+        await Code.destroy({
+          where: whereQuery,
+        });
+        return res.send();
+      } else {
+        throw new Error("User not found ");
+      }
+    } catch (error) {
+      res.status(500).json({
+        message: "Erroe when activate account",
+      });
+    }
+  }
+);
+
+app.get(
+  "/auth/sms",
+  passport.authenticate("jwt", { session: false }),
+  async (req, res) => {
+    const phone = req.query.phone;
+    const userId = req.user.id;
+    const smsCode = randomCode();
+    if (phone) {
+      return res.status(400).send();
+    }
+    try {
+      // await Axios.get(
+      //   `https://sms.ru/send?send_id=${process.env.SMS_API_KEY}&to=${process.env.SMS_API_PHONE}&msg=${smsCode}`
+      // );
+      await Code.create({
+        code: smsCode,
+        user_id: userId,
+      });
+      res.status(201).send();
+    } catch (error) {
+      res.status(500).json({
+        message: "Erroe when sending SMS",
+      });
+    }
+
+    // const data = await Axios.post(
+    //   "https://api-gateway.kyivstar.ua/mock/rest/v1beta",
+    //   (req, res) => {
+    //     const code = {
+    //       from: "messagedesk",
+    //       to: "38 (067) 273-67-51",
+    //       text: "Hello World!",
+    //     };
+    //     return req.code.body;
+    //   }
+    // );
+  }
+);
 
 app.get("/auth/github", passport.authenticate("github"));
 
