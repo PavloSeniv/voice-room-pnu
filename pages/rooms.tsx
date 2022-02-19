@@ -1,7 +1,7 @@
 import styles from "../components/pages/Rooms/Rooms.module.css";
 
 import Script from "next/script";
-import {Axios} from "../core/axios";
+import { Axios } from "../core/axiosFront";
 
 import Rooms from "../components/pages/Rooms";
 import CardConversations from "../components/construction/CardСonversations";
