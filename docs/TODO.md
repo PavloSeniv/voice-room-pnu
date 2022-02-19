@@ -61,6 +61,16 @@
   Image size
 - npm install sharp
 - npm install @types/sharp
+  SMS
+- npm i jsonwebtoken
+- npm i --save-dev @types/jsonwebtoken
+- npm i passport-jwt
+- npm i --save-dev @types/passport-jwt
+  Get Cookie
+- npm i js-cookie
+- fetch("https://localhost:3001/auth/me")
+- fetch("https://localhost:3001/auth/me", {headers:{Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7ImlkIjoxMywiZnVsbG5hbWUiOiJQYXZsbyBTZW5pdiIsInVzZXJuYW1lIjoiUGF2bG9TZW5pdiIsImF2YXRhclVybCI6Imh0dHBzOi8vYXZhdGFycy5naXRodWJ1c2VyY29udGVudC5jb20vdS83MTM5MzgyNT92PTQiLCJwaG9uZSI6IiIsImlzQWN0aXZlIjowLCJjcmVhdGVkQXQiOiIyMDIyLTAyLTE2VDEyOjU5OjU4LjgwMFoiLCJ1cGRhdGVkQXQiOiIyMDIyLTAyLTE2VDEyOjU5OjU4LjgwMFoifSwiaWF0IjoxNjQ1Mjg0NDI3LCJleHAiOjE2NDc4NzY0Mjd9.fOg1mzs82yK5XWSjYU6W3pCOcgM2bzz_TIbNfNmuO5M"}})
+- npm i --save-dev @types/js-cookie
 
 ## Pages
 
