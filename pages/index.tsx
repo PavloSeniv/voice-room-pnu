@@ -18,13 +18,14 @@ const stepsComponents = {
   5: PhoneActivation,
 };
 
-type UserProps = {
+export type UserProps = {
   id: number;
   fullname: string;
   username: string;
   avatarUrl: string;
   phone: string;
   isActive: number;
+  token?: string;
 };
 
 type MainContextProps = {
