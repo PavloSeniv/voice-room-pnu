@@ -4,7 +4,8 @@ import MainBlock from "../../construction/MainBlock";
 import Button from "../../construction/Button";
 import Image from "next/image";
 import React from "react";
-import { MainContext } from "../../../pages";
+import Cookies from "js-cookie";
+import { MainContext, UserProps } from "../../../pages";
 
 export const GetGoogle: React.FC = (params) => {
   const { onNextStep, setUserData } = React.useContext(MainContext);
@@ -59,10 +60,12 @@ export const GetGoogle: React.FC = (params) => {
       const user: string = data;
       // console.log(user);
       if (typeof user === "string" && user.includes("avatarUrl")) {
-        const jsonUser = JSON.parse(user);
+        const jsonUser: UserProps = JSON.parse(user);
         setUserData(jsonUser);
         console.log(jsonUser);
         onNextStep();
+
+        Cookies.set("token", jsonUser.token);
       }
     });
   });
