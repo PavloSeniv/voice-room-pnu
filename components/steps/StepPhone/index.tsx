@@ -13,15 +13,17 @@ type InputValueState = {
 };
 
 export const InputTel: React.FC = (params) => {
-  const { onNextStep } = React.useContext(MainContext);
+  const { onNextStep, userData, setFieldValue } = React.useContext(MainContext);
 
-  const [values, setValues] = React.useState<InputValueState>(
-    {} as InputValueState
-  ); // Витягаю інпук з даними
+  const [values, setValues] = React.useState<InputValueState>({
+    value: userData.phone,
+  } as InputValueState); // Витягаю інпук з даними
 
   console.log(values);
   const nextDisabled =
     !values.formattedValue || values.formattedValue.includes("_");
+
+    
 
   const onClickNextStep = () => {
     onNextStep();
