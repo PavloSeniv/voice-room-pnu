@@ -111,6 +111,7 @@ app.get(
         await Code.destroy({
           where: whereQuery,
         });
+        // TODO: Після успішної активації, видалити код і isActive = 1
         return res.send();
       } else {
         throw new Error("User not found ");

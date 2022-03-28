@@ -83,8 +83,8 @@
 - Lesson 1 - 2.31 Done
 - Lesson 2 - 1:33:13 Done
 - Lesson 3 - 1.24. Done
-- Lesson 4 - 0.9.45 2.15 2.22 3.00
-- Lesson 5 - 1.24 1.55 3.02
+- Lesson 4 - 0.9.45 2.15 2.22 3.00 Done
+- Lesson 5 - 1.24 1.55 3.02 Done 
 - Lesson 6 -
 - Lesson 7 -
 - Lesson 8
