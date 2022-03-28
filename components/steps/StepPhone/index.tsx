@@ -6,6 +6,7 @@ import Image from "next/image";
 import NumberFormat from "react-number-format";
 import React from "react";
 import { MainContext } from "../../../pages";
+import { Axios } from "../../../core/axios";
 
 type InputValueState = {
   formattedValue: string;
@@ -14,20 +15,29 @@ type InputValueState = {
 
 export const InputTel: React.FC = (params) => {
   const { onNextStep, userData, setFieldValue } = React.useContext(MainContext);
-
+  const [isLoading, setIsLoading] = React.useState(false);
   const [values, setValues] = React.useState<InputValueState>({
     value: userData.phone,
   } as InputValueState); // Витягаю інпук з даними
 
   console.log(values);
+
   const nextDisabled =
     !values.formattedValue || values.formattedValue.includes("_");
 
-    
-
-  const onClickNextStep = () => {
-    onNextStep();
+  const onSubmit = async () => {
+    try {
+      setFieldValue("phone", values);
+      setIsLoading(true);
+      await Axios.get("/auth/sms");
+      onNextStep();
+    } catch (error) {
+      console.warn("Error while send SMS", error);
+    } finally {
+      setIsLoading(false);
+    }
   };
+
   return (
     <MainBlock>
       <h1 className={styles.main__title}>Enter your phone!</h1>
@@ -51,12 +61,22 @@ export const InputTel: React.FC = (params) => {
       </form>
 
       <Button
-        onClick={onClickNextStep}
+        onClick={onSubmit}
         className={styles.main__button}
-        disabled={nextDisabled}
+        disabled={isLoading || nextDisabled}
       >
-        <h3 className={styles.main__buttonTitle}>Next</h3>
-        <Image src="/static/svgicons/arrow-right.svg" height={20} width={21} />
+        {isLoading ? (
+          "Sending..."
+        ) : (
+          <>
+            <h3 className={styles.main__buttonTitle}>Next</h3>
+            <Image
+              src="/static/svgicons/arrow-right.svg"
+              height={20}
+              width={21}
+            />
+          </>
+        )}
       </Button>
 
       <p className={styles.main__policy}>
