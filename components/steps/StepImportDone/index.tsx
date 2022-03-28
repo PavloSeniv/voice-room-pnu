@@ -26,10 +26,14 @@ const uploadFile = async (file: File): Promise<{ url: string }> => {
 export const SelectPhoto: React.FC = (params) => {
   const { onNextStep, userData, setFieldValue } = React.useContext(MainContext);
 
-  const [avatarUrl, setAvatarUrl] = React.useState<string>(
-    //"/static/img/index/main/avatar_placeholder.png"
-    userData.avatarUrl
-  );
+  // Задання для пустої аватарки кастомну
+  const avatarLetters = userData.fullname
+    .split(" ")
+    .map((s) => s[0])
+    .join("");
+
+  const [avatarUrl, setAvatarUrl] = React.useState<string>(userData.avatarUrl);
+  // "/static/img/index/main/avatar_placeholder.png"
 
   const inputFileRef = React.useRef<HTMLInputElement>(null); //Витягаю інпут
 
@@ -72,9 +76,9 @@ export const SelectPhoto: React.FC = (params) => {
           <UserAvatar
             width={200}
             height={200}
-            className={styles.main__photoImg}
             src={avatarUrl}
             alt="avatar_placeholder"
+            letters={avatarLetters}
           />
         </label>
         <input
