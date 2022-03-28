@@ -85,7 +85,7 @@
 - Lesson 3 - 1.24. Done
 - Lesson 4 - 0.9.45 2.15 2.22 3.00 Done
 - Lesson 5 - 1.24 1.55 3.02 Done 
-- Lesson 6 -
+- Lesson 6 - 50.00
 - Lesson 7 -
 - Lesson 8
 - Lesson 9
