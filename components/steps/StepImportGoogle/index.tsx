@@ -64,7 +64,7 @@ export const GetGoogle: React.FC = (params) => {
         setUserData(jsonUser);
         console.log(jsonUser);
         onNextStep();
-
+        window.localStorage.setItem("userData", JSON.stringify(JSON));
         Cookies.set("token", jsonUser.token);
       }
     });
@@ -77,10 +77,6 @@ export const GetGoogle: React.FC = (params) => {
   return (
     <MainBlock>
       <h1 className={styles.main__title}>Do yo wont import from ...?</h1>
-      {/* <div className={styles.main__photoSelect}>
-        <div className={styles.main__photoPlaceholder}>PS</div>
-        <h3 className={styles.main__photoName}>Pavlo Seniv</h3>
-      </div> */}
 
       <Button
         onClick={onClickAuth}
@@ -88,15 +84,6 @@ export const GetGoogle: React.FC = (params) => {
       >
         <Image src="/static/svgicons/github_icons.svg" height={20} width={20} />
         <h3 className={styles.main__buttonTitle}>Import from GitHub</h3>
-        <Image src="/static/svgicons/arrow-right.svg" height={20} width={21} />
-      </Button>
-
-      <Button
-        onClick={onClickAuth}
-        className={styles.main__button + " " + styles.main__buttonGithubBg}
-      >
-        <Image src="/static/svgicons/github_icons.svg" height={20} width={20} />
-        <h3 className={styles.main__buttonTitle}>Import from Facebook</h3>
         <Image src="/static/svgicons/arrow-right.svg" height={20} width={21} />
       </Button>
 
