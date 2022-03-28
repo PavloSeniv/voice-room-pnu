@@ -52,35 +52,6 @@
   margin-top: 10px;
 }
 
-.main__photoPlaceholder {
-  width: 200px;
-  height: 200px;
-  background: #c4c4c4;
-  border-radius: 75px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Nunito;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 54px;
-  line-height: 74px;
-  color: #000;
-  font-size: calc(30px + 24 * ((100vw - 320px) / 1600));
-  margin-top: 65px;
-}
-
-.main__photoName {
-  font-family: Nunito;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 42px;
-  line-height: 57px;
-  color: #000;
-  font-size: calc(15px + 27 * ((100vw - 320px) / 1600));
-  margin-top: 11px;
-}
-
 .main__photoInput {
   display: none;
 }
@@ -159,18 +130,7 @@
     line-height: 35px;
     margin-top: 3vmax;
   }
-
-  .main__photoPlaceholder {
-    width: 100px;
-    height: 100px;
-    border-radius: 35px;
-    margin-top: 3vmax;
-  }
-
-  .main__photoName {
-    line-height: 37px;
-  }
-
+ 
   .main__photoInputCastom {
     margin-top: 3vmax;
   }
