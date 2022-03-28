@@ -5,11 +5,12 @@ import styles from "./UserAvatar.module.css";
 
 interface AvatarProps {
   className?: string;
-  height: number;
-  width: number;
-  src: string;
-  isVoise?: boolean;
-  alt: string;
+  height?: number;
+  width?: number;
+  src?: string;
+  isVoice?: boolean;
+  alt?: string;
+  letters?: string;
 }
 
 export const UserAvatar: React.FC<AvatarProps> = ({
@@ -17,24 +18,23 @@ export const UserAvatar: React.FC<AvatarProps> = ({
   height,
   width,
   src,
-  isVoise,
+  isVoice,
   alt,
+  letters,
 }) => {
   return (
-    <picture>
-      <source
-        srcSet="img/index/main/avatar_placeholder.webp"
-        type="image/webp"
-      />
-      <Image
-        width={width}
-        height={height}
-        className={clsx(styles.main__photoImg, className)}
-        // src={` url(${src})`}
-        src={src}
-        alt={alt}
-      />
-    </picture>
+    <div
+      style={{ width, height, backgroundImage: src ? ` url(${src})` : "" }}
+      className={clsx(
+        styles.main__photoImg,
+        isVoice ? styles.avatarBorder : "",
+        className,
+        { [styles.main__photoPlaceholder]: !src }
+      )}
+     
+    >
+      {!src ? letters : null}
+    </div>
   );
 };
 
