@@ -27,7 +27,6 @@ export const InputTel: React.FC = (params) => {
 
   const onSubmit = async () => {
     try {
-      setFieldValue("phone", values);
       setIsLoading(true);
       await Axios.get("/auth/sms");
       onNextStep();
@@ -66,7 +65,7 @@ export const InputTel: React.FC = (params) => {
         disabled={isLoading || nextDisabled}
       >
         {isLoading ? (
-          "Sending..."
+          <h3 className={styles.main__buttonTitle}> "Sending..."</h3>
         ) : (
           <>
             <h3 className={styles.main__buttonTitle}>Next</h3>
