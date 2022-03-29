@@ -1,5 +1,5 @@
 import express from "express";
-import { Code } from "../../models";
+import { Code } from "../../models/";
 import { generateRandomCode } from "../utils/generateRandomCode";
 
 class AuthController {
@@ -55,7 +55,11 @@ class AuthController {
     const userId = req.user.id;
     const smsCode = generateRandomCode();
     if (phone) {
-      return res.status(400).send();
+      // TODO Експрес валідатор
+
+      return res.status(400).json({
+        message: "Telephone number not write",
+      });
     }
     try {
       // await Axios.get(
@@ -68,7 +72,7 @@ class AuthController {
 
       if (findCode) {
         return res.status(400).json({
-          message: "Code repeat"
+          message: "Code repeat",
         });
       }
 
