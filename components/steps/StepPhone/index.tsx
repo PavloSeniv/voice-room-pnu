@@ -14,13 +14,13 @@ type InputValueState = {
 };
 
 export const InputTel: React.FC = (params) => {
-  const { onNextStep, userData, setFieldValue } = React.useContext(MainContext);
+  const { onNextStep, setFieldValue } = React.useContext(MainContext);
   const [isLoading, setIsLoading] = React.useState(false);
-  const [values, setValues] = React.useState<InputValueState>({
-    value: userData.phone,
-  } as InputValueState); // Витягаю інпук з даними
+  const [values, setValues] = React.useState<InputValueState>(
+    {} as InputValueState
+  ); // Витягаю інпук з даними
 
-  console.log(values);
+  //console.log(values);
 
   const nextDisabled =
     !values.formattedValue || values.formattedValue.includes("_");
@@ -28,10 +28,20 @@ export const InputTel: React.FC = (params) => {
   const onSubmit = async () => {
     try {
       setIsLoading(true);
-      await Axios.get("/auth/sms");
+      await Axios.get(`/auth/sms?phone=${values.value}`);
+      setFieldValue("phone", values.value);
       onNextStep();
     } catch (error) {
-      console.warn("Error while send SMS", error);
+      if (error.response) {
+        //do something
+        console.warn("Error response", error);
+      } else if (error.request) {
+        //do something else
+        console.warn("Error request", error);
+      } else if (error.message) {
+        //do something other than the other two
+        console.warn("Error while send SMS", error);
+      }
     } finally {
       setIsLoading(false);
     }
