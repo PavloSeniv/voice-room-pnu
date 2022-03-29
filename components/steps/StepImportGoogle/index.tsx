@@ -60,11 +60,11 @@ export const GetGoogle: React.FC = (params) => {
       const user: string = data;
       // console.log(user);
       if (typeof user === "string" && user.includes("avatarUrl")) {
+        Cookies.remove("token");
         const jsonUser: UserProps = JSON.parse(user);
         setUserData(jsonUser);
         console.log(jsonUser);
         onNextStep();
-        window.localStorage.setItem("userData", JSON.stringify(JSON));
         Cookies.set("token", jsonUser.token);
       }
     });
