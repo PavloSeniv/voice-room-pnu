@@ -40,6 +40,26 @@ export const MainContext = React.createContext<MainContextProps>(
   {} as MainContextProps
 );
 
+const getUserData = (): UserProps | null => {
+  try {
+    return JSON.parse(window.localStorage.getItem("userData"));
+  } catch (error) {
+    return null;
+  }
+};
+
+const getFormStep = (): number => {
+  const json = getUserData();
+  if (json) {
+    if (json.phone) {
+      return 5;
+    } else {
+      return 4;
+    }
+  }
+  return 0;
+};
+
 export default function Login() {
   const [step, setStep] = React.useState<number>(0);
   const Step = stepsComponents[step];
@@ -57,7 +77,24 @@ export default function Login() {
     }));
   };
 
-  console.log(userData);
+  // console.log(userData);
+
+  React.useEffect(() => {
+    if (typeof window !== "undefined") {
+      const json = getUserData();
+      if (json) {
+        setUserData(json);
+        setStep(getFormStep());
+      }
+    }
+  }, []);
+
+  React.useEffect(() => {
+    window.localStorage.setItem(
+      "userData",
+      userData ? JSON.stringify(userData) : ""
+    );
+  }, [userData]);
 
   return (
     <div className={styles.bg__login}>
