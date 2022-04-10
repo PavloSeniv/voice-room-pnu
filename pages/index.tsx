@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Welcome from "../components/steps/StepWelcome";
-import Phone from "../components/steps/StepPhone";
+import {StepPhone} from "../components/steps/StepPhone";
 import PhoneActivation from "../components/steps/StepPhoneActivation";
 import Name from "../components/steps/StepName";
 
@@ -14,7 +14,7 @@ const stepsComponents = {
   1: ImportGoogle,
   2: Name,
   3: DoneGoogle,
-  4: Phone,
+  4: StepPhone,
   5: PhoneActivation,
 };
 
