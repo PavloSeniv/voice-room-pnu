@@ -54,7 +54,8 @@ class AuthController {
     const phone = req.query.phone;
     const userId = req.user.id;
     const smsCode = generateRandomCode();
-    if (phone) {
+    
+    if (!phone) {
       // TODO Експрес валідатор
 
       return res.status(400).json({
@@ -66,7 +67,7 @@ class AuthController {
       //   `https://sms.ru/send?send_id=${process.env.SMS_API_KEY}&to=${process.env.SMS_API_PHONE}&msg=${smsCode}`
       // );
 
-      const findCode = await Code.findCode({
+      const findCode = await Code.findOne({
         where: { user_id: userId },
       });
 
