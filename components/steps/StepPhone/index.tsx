@@ -13,7 +13,7 @@ type InputValueState = {
   value: string;
 };
 
-export const InputTel: React.FC = (params) => {
+export  const StepPhone = () => {
   const { onNextStep, setFieldValue } = React.useContext(MainContext);
   const [isLoading, setIsLoading] = React.useState(false);
   const [values, setValues] = React.useState<InputValueState>(
@@ -32,19 +32,9 @@ export const InputTel: React.FC = (params) => {
       setFieldValue("phone", values.value);
       onNextStep();
     } catch (error) {
-      if (error.response) {
-        //do something
-        console.warn("Error response", error);
-      } else if (error.request) {
-        //do something else
-        console.warn("Error request", error);
-      } else if (error.message) {
-        //do something other than the other two
-        console.warn("Error while send SMS", error);
-      }
-    } finally {
-      setIsLoading(false);
+      console.warn("Ошибка при отправке СМС", error);
     }
+    setIsLoading(false);
   };
 
   return (
@@ -96,4 +86,3 @@ export const InputTel: React.FC = (params) => {
   );
 };
 
-export default InputTel;
